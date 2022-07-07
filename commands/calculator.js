@@ -1,34 +1,43 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { Modal, MessageActionRow, TextInputComponent } = require('discord.js');
+const {
+  Modal,
+  MessageActionRow,
+  TextInputComponent,
+  MessageSelectMenu,
+} = require('discord.js');
+const { attributes } = require('../utils/gear');
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('calculator')
     .setDescription('Return the gearscore of a given equipment piece.'),
   async execute(interaction) {
-    const modal = new Modal().setCustomId('myModal').setTitle('My Modal');
-    // Add components to modal
-    // Create the text input components
-    const favoriteColorInput = new TextInputComponent()
-      .setCustomId('favoriteColorInput')
-      // The label is the prompt the user sees for this input
-      .setLabel("What's your favorite color?")
-      // Short means only a single line of text
+    const modal = new Modal().setCustomId('gsCalc').setTitle('Gear Calculator');
+
+    let options = [];
+    attributes.forEach((atr) => options.push({ label: atr, value: atr }));
+
+    const subOneSelect = new MessageSelectMenu()
+      .setCustomId('subOneSelect')
+      .setPlaceholder('Substat')
+      .setMinValues(1)
+      .setMaxValues(4)
+      .addOptions(options);
+
+    const subOneInput = new TextInputComponent()
+      .setCustomId('subOneInput')
+      .setLabel('Value')
       .setStyle('SHORT');
-    const hobbiesInput = new TextInputComponent()
-      .setCustomId('hobbiesInput')
-      .setLabel("What's some of your favorite hobbies?")
-      // Paragraph means multiple lines of text.
-      .setStyle('PARAGRAPH');
-    // An action row only holds one text input,
-    // so you need one action row per text input.
-    const firstActionRow = new MessageActionRow().addComponents(
-      favoriteColorInput,
-    );
-    const secondActionRow = new MessageActionRow().addComponents(hobbiesInput);
-    // Add inputs to the modal
+
+    // const subTwoInput = new TextInputComponent()
+    //   .setCustomId('subTwoInput')
+    //   .setLabel('Value')
+    //   .setStyle('SHORT');
+
+    const firstActionRow = new MessageActionRow().addComponents(subOneSelect);
+    const secondActionRow = new MessageActionRow().addComponents(subOneInput);
+
     modal.addComponents(firstActionRow, secondActionRow);
-    // Show the modal to the user
     await interaction.showModal(modal);
   },
 };

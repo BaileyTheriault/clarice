@@ -1,0 +1,54 @@
+{
+  "name": "",
+  "element": "",
+  "role": "",
+  "rarity": 0,
+  "hp": 0,
+  "atk": 0,
+  "def": 0,
+  "spd": 0,
+  "crit": 12,
+  "cdmg": 150,
+  "acc": 0,
+  "res": 0,
+  "ass": 3,
+  "skill1": {
+    "name": "",
+    "cooldown": 0,
+    "passive": false,
+    "description": "",
+    "cost": 0,
+    "gain": 0,
+    "upgrades": []
+  },
+  "skill2": {
+    "name": "",
+    "cooldown": 0,
+    "passive": false,
+    "description": "",
+    "cost": 0,
+    "gain": 0,
+    "upgrades": []
+  },
+  "skill3": {
+    "name": "",
+    "cooldown": 0,
+    "passive": false,
+    "description": "",
+    "cost": 0,
+    "gain": 0,
+    "upgrades": []
+  },
+  "selfImprint": "",
+  "partyImprint": "",
+  "selfBuffs": [],
+  "partyBuffs": [],
+  "debuffs": [],
+  "specialEq": {
+    "name": "",
+    "mainStat": "",
+    "hp": 0,
+    "atk": 0,
+    "skillEffect": ""
+  }
+}

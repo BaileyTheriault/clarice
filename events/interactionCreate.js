@@ -1,6 +1,12 @@
 module.exports = {
   name: 'interactionCreate',
   async execute(client, interaction) {
+    if (interaction.isModalSubmit()) {
+      console.log(interaction.values);
+      return await interaction.reply({
+        content: 'Your submission was recieved successfully!',
+      });
+    }
     if (!interaction.isCommand()) return;
 
     const command = client.commands.get(interaction.commandName);

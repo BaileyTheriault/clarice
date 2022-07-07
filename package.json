@@ -4,8 +4,7 @@
   "description": "Artery Gear Discord bot",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "commands": "node deploy-commands.js"
+    "start": "node deploy-commands.js && nodemon index.js"
   },
   "author": "",
   "license": "ISC",
