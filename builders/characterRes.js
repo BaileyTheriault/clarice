@@ -1,4 +1,9 @@
-const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
+const {
+  MessageEmbed,
+  MessageActionRow,
+  MessageButton,
+  MessageAttachment,
+} = require('discord.js');
 const { findCharacter } = require('../mongo/characterMethods');
 const { elements } = require('../utils/data');
 
@@ -16,6 +21,7 @@ const characterResponse = async (
   const response = {
     embeds: [embed],
     ephemeral: !visibility,
+    files: [],
   };
 
   if (!name && !debuff && !buff && !partyBuff && !imprint && !partyImprint) {
@@ -86,7 +92,13 @@ const characterResponse = async (
       specialEq,
     } = characterData[0];
 
-    embed.setTitle(name).setColor(elements[element.toUpperCase()]);
+    const pfpImg = new MessageAttachment(`./assets/avatars/${name}.png`);
+    response.files.push(pfpImg);
+
+    embed
+      .setTitle(name)
+      .setColor(elements[element.toUpperCase()])
+      .setThumbnail(`attachment://${name}.png`);
   }
 
   if (characterData.length > 1) {
