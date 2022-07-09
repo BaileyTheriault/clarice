@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const characterResponse = require('../builders/characterRes');
 const { attributes, debuffs, buffs } = require('../utils/data');
 
 const attributeOptions = [];
@@ -16,7 +17,9 @@ buffs.forEach((buff) => buffOptions.push({ name: buff, value: buff }));
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('character')
-    .setDescription('Returns character information!')
+    .setDescription(
+      'Returns character information! Press enter without any options for help.',
+    )
     .addStringOption((option) =>
       option
         .setName('name')
@@ -57,8 +60,32 @@ module.exports = {
           'Select an attribute to see what characters have it as a party imprint',
         )
         .addChoices(...attributeOptions),
+    )
+    .addBooleanOption((option) =>
+      option
+        .setName('visibility')
+        .setDescription(
+          'Display the result message privately (false) or publically (true)',
+        ),
     ),
   async execute(interaction) {
-    await interaction.reply({ content: 'Great info bro', ephemeral: true });
+    const name = interaction.options.getString('name');
+    const debuff = interaction.options.getString('debuff');
+    const buff = interaction.options.getString('buff');
+    const partyBuff = interaction.options.getString('party-buff');
+    const imprint = interaction.options.getString('imprint');
+    const partyImprint = interaction.options.getString('party-imprint');
+    const visibility = interaction.options.getBoolean('visibility');
+
+    const res = await characterResponse(
+      name,
+      debuff,
+      buff,
+      partyBuff,
+      imprint,
+      partyImprint,
+      visibility,
+    );
+    await interaction.reply(res);
   },
 };

@@ -59,4 +59,9 @@ module.exports = {
     'Status Accuracy',
     'Stun',
   ],
+  elements: {
+    MOLTEN: 'RED',
+    CRYSTAL: 'GREEN',
+    THUNDER: 'BLUE',
+  },
 };

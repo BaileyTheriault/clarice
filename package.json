@@ -4,7 +4,9 @@
   "description": "Artery Gear Discord bot",
   "main": "index.js",
   "scripts": {
-    "start": "node deploy-commands.js && nodemon index.js"
+    "start": "nodemon index.js",
+    "seed": "npm run characterData",
+    "characterData": "mongo clarice --eval 'db.characters.drop()' && mongoimport --db clarice --collection characters --file ./characters/characterData.json --jsonArray"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "discord-api-types": "^0.36.1",
     "discord.js": "^13.8.1",
     "dotenv": "^16.0.1",
+    "mongoose": "^6.4.4",
     "nodemon": "^2.0.18"
   }
 }

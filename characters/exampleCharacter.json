@@ -39,9 +39,9 @@
     "gain": 0,
     "upgrades": []
   },
-  "selfImprint": "",
+  "imprint": "",
   "partyImprint": "",
-  "selfBuffs": [],
+  "buffs": [],
   "partyBuffs": [],
   "debuffs": [],
   "specialEq": {

@@ -58,9 +58,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Attack"],
+    "buffs": ["Attack"],
     "partyBuffs": [],
     "debuffs": ["Burn"],
     "specialEq": {
@@ -129,9 +129,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "DEF %",
-    "selfBuffs": ["Defense", "Invincibility"],
+    "buffs": ["Defense", "Invincibility"],
     "partyBuffs": ["Defense"],
     "debuffs": ["Stun", "Blind"],
     "specialEq": {
@@ -200,9 +200,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "DEF %",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": ["Extra Turn", "Attack"],
     "debuffs": ["Slow"],
     "specialEq": {
@@ -271,9 +271,9 @@
         "Shield increased by 15%"
       ]
     },
-    "selfImprint": "DEF",
+    "imprint": "DEF",
     "partyImprint": "HP",
-    "selfBuffs": ["Barrier", "Resistance", "Safeguard", "Cleanse"],
+    "buffs": ["Barrier", "Resistance", "Safeguard", "Cleanse"],
     "partyBuffs": [],
     "debuffs": ["Provoke"],
     "specialEq": {
@@ -342,9 +342,9 @@
         "Effect increased by 3%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "CDMG",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Defense", "Dispel"],
     "specialEq": {
@@ -413,9 +413,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "CRIT",
-    "selfBuffs": ["Attack"],
+    "buffs": ["Attack"],
     "partyBuffs": ["Attack"],
     "debuffs": ["Dispel"],
     "specialEq": {
@@ -484,9 +484,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "ATK",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Defense"],
     "specialEq": {
@@ -552,9 +552,9 @@
       "gain": 0,
       "upgrades": ["Reduce cooldown by 1 turn", "Reduce cooldown by 1 turn"]
     },
-    "selfImprint": "HP",
+    "imprint": "HP",
     "partyImprint": "ATK",
-    "selfBuffs": ["Extra Turn"],
+    "buffs": ["Extra Turn"],
     "partyBuffs": [],
     "debuffs": [],
     "specialEq": {
@@ -623,9 +623,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "ACC",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Shock"],
     "specialEq": {
@@ -694,9 +694,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "CRIT",
-    "selfBuffs": ["Speed"],
+    "buffs": ["Speed"],
     "partyBuffs": ["Speed"],
     "debuffs": ["Slow"],
     "specialEq": {
@@ -765,9 +765,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "ATK %",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Defense"],
     "specialEq": {
@@ -836,9 +836,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "CRIT",
-    "selfBuffs": ["Stealth", "Speed", "Critical"],
+    "buffs": ["Stealth", "Speed", "Critical"],
     "partyBuffs": [],
     "debuffs": ["Silence"],
     "specialEq": {
@@ -907,9 +907,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "CRIT",
-    "selfBuffs": ["Extra Turn"],
+    "buffs": ["Extra Turn"],
     "partyBuffs": [],
     "debuffs": ["Anti-Heal"],
     "specialEq": {
@@ -978,9 +978,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Stealth", "Barrier", "Speed"],
+    "buffs": ["Stealth", "Barrier", "Speed"],
     "partyBuffs": [],
     "debuffs": ["Stun"],
     "specialEq": {
@@ -1049,9 +1049,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "DEF %",
+    "imprint": "DEF %",
     "partyImprint": "RES",
-    "selfBuffs": ["Rejuvenation", "Defense"],
+    "buffs": ["Rejuvenation", "Defense"],
     "partyBuffs": [],
     "debuffs": ["Provoke"],
     "specialEq": {
@@ -1120,9 +1120,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "HP %",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Stun", "Slow"],
     "specialEq": {
@@ -1191,9 +1191,9 @@
         "Heal increased by 15%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "HP %",
-    "selfBuffs": ["Random"],
+    "buffs": ["Random"],
     "partyBuffs": ["Random", "Cleanse"],
     "debuffs": ["Stun"],
     "specialEq": {
@@ -1262,9 +1262,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Speed"],
+    "buffs": ["Speed"],
     "partyBuffs": [],
     "debuffs": ["Dispel", "Silence"],
     "specialEq": {
@@ -1331,9 +1331,9 @@
       "gain": 0,
       "upgrades": ["Reduce cooldown by 1 turn"]
     },
-    "selfImprint": "RES",
+    "imprint": "RES",
     "partyImprint": "RES",
-    "selfBuffs": ["Cleanse", "Barrier"],
+    "buffs": ["Cleanse", "Barrier"],
     "partyBuffs": ["Cleanse", "Barrier"],
     "debuffs": [],
     "specialEq": {
@@ -1402,9 +1402,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "ATK",
-    "selfBuffs": ["Critical"],
+    "buffs": ["Critical"],
     "partyBuffs": ["Critical"],
     "debuffs": ["Stun", "Defense"],
     "specialEq": {
@@ -1473,9 +1473,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Speed"],
+    "buffs": ["Speed"],
     "partyBuffs": [],
     "debuffs": ["Dispel", "Silence", "Defense"],
     "specialEq": {
@@ -1544,9 +1544,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ACC",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Shock"],
     "specialEq": {
@@ -1613,9 +1613,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Attack"],
+    "buffs": ["Attack"],
     "partyBuffs": [],
     "debuffs": ["Burn", "Anti-Heal", "Defense"],
     "specialEq": {
@@ -1684,9 +1684,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK",
+    "imprint": "ATK",
     "partyImprint": "HP",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": [],
     "specialEq": {
@@ -1755,9 +1755,9 @@
         "DMG is increased by 20%"
       ]
     },
-    "selfImprint": "ATK",
+    "imprint": "ATK",
     "partyImprint": "DEF",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Attack", "Anti-Heal", "Provoke"],
     "specialEq": {
@@ -1826,9 +1826,9 @@
         "Heal increased by 10%"
       ]
     },
-    "selfImprint": "RES",
+    "imprint": "RES",
     "partyImprint": "HP %",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": ["Cleanse", "Rejuvenation"],
     "debuffs": [],
     "specialEq": {
@@ -1897,9 +1897,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Invincibility"],
+    "buffs": ["Invincibility"],
     "partyBuffs": [],
     "debuffs": ["Blind", "Stun"],
     "specialEq": {
@@ -1965,9 +1965,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "RES",
-    "selfBuffs": ["Barrier", "Resistance", "Random"],
+    "buffs": ["Barrier", "Resistance", "Random"],
     "partyBuffs": ["Barrier", "Resistance", "Random"],
     "debuffs": ["Stun", "Restricted"],
     "specialEq": {
@@ -2033,9 +2033,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "ATK",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": [],
     "specialEq": {
@@ -2104,9 +2104,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ACC",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Attack", "Dispel", "Slow"],
     "specialEq": {
@@ -2175,9 +2175,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK",
+    "imprint": "ATK",
     "partyImprint": "ATK",
-    "selfBuffs": ["Stealth"],
+    "buffs": ["Stealth"],
     "partyBuffs": [],
     "debuffs": ["Blind"],
     "specialEq": {
@@ -2246,9 +2246,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "ATK",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": [],
     "specialEq": {
@@ -2317,9 +2317,9 @@
         "Heal increased by 10%"
       ]
     },
-    "selfImprint": "HP",
+    "imprint": "HP",
     "partyImprint": "HP",
-    "selfBuffs": ["Speed", "Defense", "Rejuvenation", "Cleanse"],
+    "buffs": ["Speed", "Defense", "Rejuvenation", "Cleanse"],
     "partyBuffs": ["Speed", "Defense", "Rejuvenation", "Cleanse"],
     "debuffs": [],
     "specialEq": {
@@ -2388,9 +2388,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK",
+    "imprint": "ATK",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Invincibility"],
+    "buffs": ["Invincibility"],
     "partyBuffs": [],
     "debuffs": ["Dispel"],
     "specialEq": {
@@ -2459,9 +2459,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "DEF %",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Anti-Heal", "Attack"],
     "specialEq": {
@@ -2530,9 +2530,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "ASS",
-    "selfBuffs": ["Attack"],
+    "buffs": ["Attack"],
     "partyBuffs": ["Attack"],
     "debuffs": ["Stun"],
     "specialEq": {
@@ -2601,9 +2601,9 @@
         "Heal increased by 15%"
       ]
     },
-    "selfImprint": "RES",
+    "imprint": "RES",
     "partyImprint": "HP",
-    "selfBuffs": ["Cleanse", "Immunity", "Speed"],
+    "buffs": ["Cleanse", "Immunity", "Speed"],
     "partyBuffs": ["Cleanse", "Immunity"],
     "debuffs": [],
     "specialEq": {
@@ -2672,9 +2672,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "ATK",
-    "selfBuffs": ["Accuracy"],
+    "buffs": ["Accuracy"],
     "partyBuffs": [],
     "debuffs": ["Dispel", "Stun", "Mark", "Silence"],
     "specialEq": {
@@ -2743,9 +2743,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "CRIT",
-    "selfBuffs": ["Attack"],
+    "buffs": ["Attack"],
     "partyBuffs": ["Attack"],
     "debuffs": ["Burn"],
     "specialEq": {
@@ -2814,9 +2814,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "CRIT",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Defense", "Paralyze", "Blind"],
     "specialEq": {
@@ -2885,9 +2885,9 @@
         "Heal increased by 10%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "RES",
-    "selfBuffs": ["Cleanse", "Rejuvenation"],
+    "buffs": ["Cleanse", "Rejuvenation"],
     "partyBuffs": ["Cleanse", "Rejuvenation"],
     "debuffs": ["Blind"],
     "specialEq": {
@@ -2956,9 +2956,9 @@
         "Heal increased by 10%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "CDMG",
-    "selfBuffs": ["Extra Turn", "Attack", "Invincibility"],
+    "buffs": ["Extra Turn", "Attack", "Invincibility"],
     "partyBuffs": ["Invincibility"],
     "debuffs": [],
     "specialEq": {
@@ -3027,9 +3027,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "DEF %",
+    "imprint": "DEF %",
     "partyImprint": "DEF %",
-    "selfBuffs": ["Barrier", "Defense"],
+    "buffs": ["Barrier", "Defense"],
     "partyBuffs": ["Barrier"],
     "debuffs": ["Provoke", "Blind"],
     "specialEq": {
@@ -3096,9 +3096,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "CDMG",
-    "selfBuffs": ["Attack", "Critical Damage"],
+    "buffs": ["Attack", "Critical Damage"],
     "partyBuffs": [],
     "debuffs": ["Buff Block"],
     "specialEq": {
@@ -3167,9 +3167,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "HP",
+    "imprint": "HP",
     "partyImprint": "ATK",
-    "selfBuffs": ["Defense", "Barrier", "Attack"],
+    "buffs": ["Defense", "Barrier", "Attack"],
     "partyBuffs": ["Attack"],
     "debuffs": ["Defense", "Provoke"],
     "specialEq": {
@@ -3238,9 +3238,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "ATK",
-    "selfBuffs": ["Speed"],
+    "buffs": ["Speed"],
     "partyBuffs": [],
     "debuffs": ["Defense"],
     "specialEq": {
@@ -3309,9 +3309,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "HP",
+    "imprint": "HP",
     "partyImprint": "HP",
-    "selfBuffs": ["Speed", "Cleanse"],
+    "buffs": ["Speed", "Cleanse"],
     "partyBuffs": ["Speed", "Cleanse"],
     "debuffs": ["Slow"],
     "specialEq": {
@@ -3380,9 +3380,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "SPD",
-    "selfBuffs": ["Attack"],
+    "buffs": ["Attack"],
     "partyBuffs": [],
     "debuffs": [],
     "specialEq": {
@@ -3449,9 +3449,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Attack", "Speed"],
+    "buffs": ["Attack", "Speed"],
     "partyBuffs": ["Attack", "Speed"],
     "debuffs": ["Anti-Heal"],
     "specialEq": {
@@ -3520,9 +3520,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "HP",
+    "imprint": "HP",
     "partyImprint": "DEF",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": ["Barrier"],
     "debuffs": ["Shock", "Stun"],
     "specialEq": {
@@ -3591,9 +3591,9 @@
         "DMG is increased by 20%"
       ]
     },
-    "selfImprint": "HP",
+    "imprint": "HP",
     "partyImprint": "DEF",
-    "selfBuffs": ["Extra Turn"],
+    "buffs": ["Extra Turn"],
     "partyBuffs": [],
     "debuffs": ["Corrosion"],
     "specialEq": {
@@ -3662,9 +3662,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Attack", "Speed"],
+    "buffs": ["Attack", "Speed"],
     "partyBuffs": [],
     "debuffs": ["Dispel"],
     "specialEq": {
@@ -3733,9 +3733,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "HP %",
-    "selfBuffs": ["Attack", "Extra Turn"],
+    "buffs": ["Attack", "Extra Turn"],
     "partyBuffs": [],
     "debuffs": ["Buff Block"],
     "specialEq": {
@@ -3804,9 +3804,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Speed", "Emergency Device"],
+    "buffs": ["Speed", "Emergency Device"],
     "partyBuffs": [],
     "debuffs": [],
     "specialEq": {
@@ -3875,9 +3875,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "ATK %",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Paralyze", "Shock"],
     "specialEq": {
@@ -3946,9 +3946,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ASS",
+    "imprint": "ASS",
     "partyImprint": "HP",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Burn", "Defense"],
     "specialEq": {
@@ -4017,9 +4017,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "HP %",
-    "selfBuffs": ["Cleanse"],
+    "buffs": ["Cleanse"],
     "partyBuffs": [],
     "debuffs": ["Attack", "Defense"],
     "specialEq": {
@@ -4088,9 +4088,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT",
+    "imprint": "CRIT",
     "partyImprint": "ATK %",
-    "selfBuffs": ["Speed", "Extra Turn"],
+    "buffs": ["Speed", "Extra Turn"],
     "partyBuffs": [],
     "debuffs": ["Defense"],
     "specialEq": {
@@ -4159,9 +4159,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK",
+    "imprint": "ATK",
     "partyImprint": "ATK",
-    "selfBuffs": ["Barrier", "Speed"],
+    "buffs": ["Barrier", "Speed"],
     "partyBuffs": [],
     "debuffs": ["Shock"],
     "specialEq": {
@@ -4230,9 +4230,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ACC",
+    "imprint": "ACC",
     "partyImprint": "CDMG",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Burn"],
     "specialEq": {
@@ -4301,9 +4301,9 @@
         "Provoke and Attack Down chance increased by 15%"
       ]
     },
-    "selfImprint": "DEF %",
+    "imprint": "DEF %",
     "partyImprint": "DEF %  ",
-    "selfBuffs": ["Defense"],
+    "buffs": ["Defense"],
     "partyBuffs": [],
     "debuffs": ["Provoke", "Attack", "Stun"],
     "specialEq": {
@@ -4372,9 +4372,9 @@
         "DMG is increased by 20%"
       ]
     },
-    "selfImprint": "Defense %",
+    "imprint": "Defense %",
     "partyImprint": "Attack %",
-    "selfBuffs": ["Attack", "Extra Turn"],
+    "buffs": ["Attack", "Extra Turn"],
     "partyBuffs": [],
     "debuffs": ["Stun"],
     "specialEq": {
@@ -4443,9 +4443,9 @@
         "Increase action bar boost by 3%"
       ]
     },
-    "selfImprint": "ATK",
+    "imprint": "ATK",
     "partyImprint": "ATK",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": [],
     "specialEq": {
@@ -4514,9 +4514,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "DEF %",
+    "imprint": "DEF %",
     "partyImprint": "HP %",
-    "selfBuffs": ["Extra Turn"],
+    "buffs": ["Extra Turn"],
     "partyBuffs": [],
     "debuffs": ["Attack", "Stun", "Slow"],
     "specialEq": {
@@ -4585,9 +4585,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ATK %",
+    "imprint": "ATK %",
     "partyImprint": "HP %",
-    "selfBuffs": ["Attack", "Critical Resistance"],
+    "buffs": ["Attack", "Critical Resistance"],
     "partyBuffs": [],
     "debuffs": ["Attack", "Critical", "Dispel"],
     "specialEq": {
@@ -4656,9 +4656,9 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "HP %",
+    "imprint": "HP %",
     "partyImprint": "ACC",
-    "selfBuffs": ["Rejuvenation", "Defense"],
+    "buffs": ["Rejuvenation", "Defense"],
     "partyBuffs": [],
     "debuffs": ["Defense", "Mark"],
     "specialEq": {
@@ -4727,9 +4727,9 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "ASS",
+    "imprint": "ASS",
     "partyImprint": "ATK %",
-    "selfBuffs": [],
+    "buffs": [],
     "partyBuffs": [],
     "debuffs": ["Defense"],
     "specialEq": {
@@ -4795,9 +4795,9 @@
       "gain": 0,
       "upgrades": ["Reduce cooldown by 1 turn", "Reduce cooldown by 1 turn"]
     },
-    "selfImprint": "RES",
+    "imprint": "RES",
     "partyImprint": "HP",
-    "selfBuffs": ["Immunity", "Barrier", "Defense"],
+    "buffs": ["Immunity", "Barrier", "Defense"],
     "partyBuffs": ["Immunity", "Defense"],
     "debuffs": [],
     "specialEq": {
