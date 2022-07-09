@@ -1,76 +1,5 @@
 [
   {
-    "name": "Teufel",
-    "element": "Molten",
-    "role": "Balanced",
-    "rarity": 5,
-    "hp": 8507,
-    "atk": 1109,
-    "def": 754,
-    "spd": 102,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "Heat Sword \"General Blink\"",
-      "cooldown": 0,
-      "passive": false,
-      "description": "Teufel swings a heated blade to chop the enemy, causing 106% damage to a single enemy target, and heals her own health by 30% of the damage dealt",
-      "cost": 0,
-      "gain": 30,
-      "upgrades": [
-        "DMG is increased by 5%",
-        "HP restored is increased by 5%",
-        "DMG is increased by 10%",
-        "HP restored is increased by 15%",
-        "DMG is increased by 15%"
-      ]
-    },
-    "skill2": {
-      "name": "True Master",
-      "cooldown": 3,
-      "passive": true,
-      "description": "Fighting makes Teufel more enthusiastic. When attacked, increases her energy value by 5 and has a 10% chance to gain an Extra Turn. When being hit, gain 10% attack which stacks up to 5 times. The stacks are removed after using an active skill. At the start of battle, gain 50 energy.",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": [
-        "Extra Turn chance is increased by 2%",
-        "Extra Turn chance is increased by 2%",
-        "Reduce cooldown by 1 turn",
-        "Extra Turn chance is increased by 3%",
-        "Extra Turn chance is increased by 3%"
-      ]
-    },
-    "skill3": {
-      "name": "Heat Sword \"Black Scorpion\"",
-      "cooldown": 0,
-      "passive": false,
-      "description": "Teufel quickly slashes and tears apart all enemies on the battlefield. Gain ATK Boost for 2 turns then deal damage equal to 127.2% ATK to all enemies with a 50% chance to Stun them for 1 turn.",
-      "cost": 70,
-      "gain": 0,
-      "upgrades": [
-        "DMG is increased by 10%",
-        "Stun chance is increased by 10%",
-        "DMG is increased by 10%",
-        "Stun chance is increased by 15%",
-        "DMG is increased by 20%"
-      ]
-    },
-    "selfImprint": "Defense %",
-    "partyImprint": "Attack %",
-    "selfBuffs": ["Attack", "Extra Turn"],
-    "partyBuffs": [],
-    "debuffs": ["Stun"],
-    "specialEq": {
-      "mainStat": "14% HP",
-      "hp": 479,
-      "atk": 314,
-      "skillEffect": "Gain 35 additional energy at the start of a battle. Increases [Leader's Zealotry] energy gain when attacked to 12."
-    }
-  },
-  {
     "name": "04",
     "element": "Molten",
     "role": "Assault",
@@ -909,7 +838,7 @@
     },
     "selfImprint": "CRIT",
     "partyImprint": "CRIT",
-    "selfBuffs": ["Stealth", "Speed", "Crit"],
+    "selfBuffs": ["Stealth", "Speed", "Critical"],
     "partyBuffs": [],
     "debuffs": ["Silence"],
     "specialEq": {
@@ -1109,7 +1038,7 @@
       "name": "Inferno Saw",
       "cooldown": 5,
       "passive": false,
-      "description": "Dean cranks it to maximum horsepower to attack the enemy, causing damage equal to 106% of attack power + 159% of own defense as damage to a single enemy target; if the target’s health is lower than 30% of the maximum health, [Inferno Saw's] damage increased by 4 times. When Dean uses [Inferno Saw] and kills an enemy, she will gain Heal Over Time for 2 rounds.",
+      "description": "Dean cranks it to maximum horsepower to attack the enemy, causing damage equal to 106% of attack power + 159% of own defense as damage to a single enemy target; if the target’s health is lower than 30% of the maximum health, [Inferno Saw's] damage increased by 4 times. When Dean uses [Inferno Saw] and kills an enemy, she will gain Rejuvenation for 2 rounds.",
       "cost": 0,
       "gain": 0,
       "upgrades": [
@@ -1122,7 +1051,7 @@
     },
     "selfImprint": "DEF %",
     "partyImprint": "RES",
-    "selfBuffs": ["Heal Over Time", "Defense"],
+    "selfBuffs": ["Rejuvenation", "Defense"],
     "partyBuffs": [],
     "debuffs": ["Provoke"],
     "specialEq": {
@@ -1475,8 +1404,8 @@
     },
     "selfImprint": "ACC",
     "partyImprint": "ATK",
-    "selfBuffs": ["Crit"],
-    "partyBuffs": ["Crit"],
+    "selfBuffs": ["Critical"],
+    "partyBuffs": ["Critical"],
     "debuffs": ["Stun", "Defense"],
     "specialEq": {
       "mainStat": "",
@@ -1872,7 +1801,7 @@
       "name": "Restoration Grenade",
       "cooldown": 3,
       "passive": false,
-      "description": "Hearin restores the confidence of her students and gives all allies Heal Over Time for 2 rounds, and restores all allies health equal to 30% of health they've lost. Cleanse the ally with the lowest proportional health and advance their action bar by 35%.",
+      "description": "Hearin restores the confidence of her students and gives all allies Rejuvenation for 2 rounds, and restores all allies health equal to 30% of health they've lost. Cleanse the ally with the lowest proportional health and advance their action bar by 35%.",
       "cost": 0,
       "gain": 0,
       "upgrades": [
@@ -1900,7 +1829,7 @@
     "selfImprint": "RES",
     "partyImprint": "HP %",
     "selfBuffs": [],
-    "partyBuffs": ["Cleanse", "Heal Over Time"],
+    "partyBuffs": ["Cleanse", "Rejuvenation"],
     "debuffs": [],
     "specialEq": {
       "mainStat": "10 SPD",
@@ -2362,7 +2291,7 @@
       "name": "Sakura's Protection",
       "cooldown": 3,
       "passive": false,
-      "description": "Heal 26.5% of the target's maximum health for a single ally, and grant Heal Over Time for 3 rounds.",
+      "description": "Heal 26.5% of the target's maximum health for a single ally, and grant Rejuvenation for 3 rounds.",
       "cost": 0,
       "gain": 0,
       "upgrades": [
@@ -2390,8 +2319,8 @@
     },
     "selfImprint": "HP",
     "partyImprint": "HP",
-    "selfBuffs": ["Speed", "Defense", "Heal Over Time", "Cleanse"],
-    "partyBuffs": ["Speed", "Defense", "Heal Over Time", "Cleanse"],
+    "selfBuffs": ["Speed", "Defense", "Rejuvenation", "Cleanse"],
+    "partyBuffs": ["Speed", "Defense", "Rejuvenation", "Cleanse"],
     "debuffs": [],
     "specialEq": {
       "mainStat": "",
@@ -2930,7 +2859,7 @@
       "name": "Emergency Mist Treatment",
       "cooldown": 3,
       "passive": false,
-      "description": "Morris activates a healing spray to restore health equal to 15% of own maximum health for a single ally, advancing their action bar by 30%, reducing the cooldown of all their skills by 1 round, and giving a Heal Over Time for 2 rounds.",
+      "description": "Morris activates a healing spray to restore health equal to 15% of own maximum health for a single ally, advancing their action bar by 30%, reducing the cooldown of all their skills by 1 round, and giving a Rejuvenation for 2 rounds.",
       "cost": 0,
       "gain": 0,
       "upgrades": [
@@ -2958,8 +2887,8 @@
     },
     "selfImprint": "HP %",
     "partyImprint": "RES",
-    "selfBuffs": ["Cleanse", "Heal Over Time"],
-    "partyBuffs": ["Cleanse", "Heal Over Time"],
+    "selfBuffs": ["Cleanse", "Rejuvenation"],
+    "partyBuffs": ["Cleanse", "Rejuvenation"],
     "debuffs": ["Blind"],
     "specialEq": {
       "mainStat": "",
@@ -4385,6 +4314,77 @@
     }
   },
   {
+    "name": "Teufel",
+    "element": "Molten",
+    "role": "Balanced",
+    "rarity": 5,
+    "hp": 8507,
+    "atk": 1109,
+    "def": 754,
+    "spd": 102,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Heat Sword \"General Blink\"",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Teufel swings a heated blade to chop the enemy, causing 106% damage to a single enemy target, and heals her own health by 30% of the damage dealt",
+      "cost": 0,
+      "gain": 30,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "HP restored is increased by 5%",
+        "DMG is increased by 10%",
+        "HP restored is increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "True Master",
+      "cooldown": 3,
+      "passive": true,
+      "description": "Fighting makes Teufel more enthusiastic. When attacked, increases her energy value by 5 and has a 10% chance to gain an Extra Turn. When being hit, gain 10% attack which stacks up to 5 times. The stacks are removed after using an active skill. At the start of battle, gain 50 energy.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Extra Turn chance is increased by 2%",
+        "Extra Turn chance is increased by 2%",
+        "Reduce cooldown by 1 turn",
+        "Extra Turn chance is increased by 3%",
+        "Extra Turn chance is increased by 3%"
+      ]
+    },
+    "skill3": {
+      "name": "Heat Sword \"Black Scorpion\"",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Teufel quickly slashes and tears apart all enemies on the battlefield. Gain ATK Boost for 2 turns then deal damage equal to 127.2% ATK to all enemies with a 50% chance to Stun them for 1 turn.",
+      "cost": 70,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Stun chance is increased by 10%",
+        "DMG is increased by 10%",
+        "Stun chance is increased by 15%",
+        "DMG is increased by 20%"
+      ]
+    },
+    "selfImprint": "Defense %",
+    "partyImprint": "Attack %",
+    "selfBuffs": ["Attack", "Extra Turn"],
+    "partyBuffs": [],
+    "debuffs": ["Stun"],
+    "specialEq": {
+      "mainStat": "14% HP",
+      "hp": 479,
+      "atk": 314,
+      "skillEffect": "Gain 35 additional energy at the start of a battle. Increases [Leader's Zealotry] energy gain when attacked to 12."
+    }
+  },
+  {
     "name": "Timy",
     "element": "Molten",
     "role": "Tactics",
@@ -4658,7 +4658,7 @@
     },
     "selfImprint": "HP %",
     "partyImprint": "ACC",
-    "selfBuffs": ["Heal Over Time", "Defense"],
+    "selfBuffs": ["Rejuvenation", "Defense"],
     "partyBuffs": [],
     "debuffs": ["Defense", "Mark"],
     "specialEq": {

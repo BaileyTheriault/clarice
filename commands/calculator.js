@@ -5,7 +5,7 @@ const {
   TextInputComponent,
   MessageSelectMenu,
 } = require('discord.js');
-const { attributes } = require('../utils/gear');
+const { attributes } = require('../utils/data');
 
 module.exports = {
   data: new SlashCommandBuilder()
