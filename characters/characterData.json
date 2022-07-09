@@ -413,8 +413,8 @@
         "Effect increased by 3%"
       ]
     },
-    "selfImprint": "ACC %",
-    "partyImprint": "CDMG %",
+    "selfImprint": "ACC",
+    "partyImprint": "CDMG",
     "selfBuffs": [],
     "partyBuffs": [],
     "debuffs": ["Defense", "Dispel"],
@@ -484,8 +484,8 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT %",
-    "partyImprint": "CRIT %",
+    "selfImprint": "CRIT",
+    "partyImprint": "CRIT",
     "selfBuffs": ["Attack"],
     "partyBuffs": ["Attack"],
     "debuffs": ["Dispel"],
@@ -555,7 +555,7 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "CRIT %",
+    "selfImprint": "CRIT",
     "partyImprint": "ATK",
     "selfBuffs": [],
     "partyBuffs": [],
@@ -694,8 +694,8 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "ACC %",
-    "partyImprint": "ACC %",
+    "selfImprint": "ACC",
+    "partyImprint": "ACC",
     "selfBuffs": [],
     "partyBuffs": [],
     "debuffs": ["Shock"],
@@ -766,7 +766,7 @@
       ]
     },
     "selfImprint": "ATK %",
-    "partyImprint": "CRIT %",
+    "partyImprint": "CRIT",
     "selfBuffs": ["Speed"],
     "partyBuffs": ["Speed"],
     "debuffs": ["Slow"],
@@ -836,7 +836,7 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT %",
+    "selfImprint": "CRIT",
     "partyImprint": "ATK %",
     "selfBuffs": [],
     "partyBuffs": [],
@@ -907,8 +907,8 @@
         "DMG is increased by 15%"
       ]
     },
-    "selfImprint": "CRIT %",
-    "partyImprint": "CRIT %",
+    "selfImprint": "CRIT",
+    "partyImprint": "CRIT",
     "selfBuffs": ["Stealth", "Speed", "Crit"],
     "partyBuffs": [],
     "debuffs": ["Silence"],
@@ -978,8 +978,8 @@
         "DMG is increased by 10%"
       ]
     },
-    "selfImprint": "CRIT %",
-    "partyImprint": "CRIT %",
+    "selfImprint": "CRIT",
+    "partyImprint": "CRIT",
     "selfBuffs": ["Extra Turn"],
     "partyBuffs": [],
     "debuffs": ["Anti-Heal"],
@@ -1062,48 +1062,701 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
+    "name": "Dean",
+    "element": "Crystal",
+    "role": "Tank",
+    "rarity": 4,
+    "hp": 7251,
+    "atk": 938,
+    "def": 804,
+    "spd": 99,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 12,
+    "ass": 3,
+    "skill1": {
+      "name": "Saw Slash",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Dean revs her chainsaw, causing damage equal to 53% of attack power + 79.5% of own defense to a single enemy target; giving herself Defense Buff for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Risk Taker",
+      "cooldown": 0,
+      "passive": true,
+      "description": "When being attacked, there is a 15% chance that the attacker will be Provoked for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Provoke chance increased by 1%",
+        "Provoke chance increased by 2%",
+        "Provoke chance increased by 2%",
+        "Provoke chance increased by 2%",
+        "Provoke chance increased by 3%"
+      ]
+    },
+    "skill3": {
+      "name": "Inferno Saw",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Dean cranks it to maximum horsepower to attack the enemy, causing damage equal to 106% of attack power + 159% of own defense as damage to a single enemy target; if the target’s health is lower than 30% of the maximum health, [Inferno Saw's] damage increased by 4 times. When Dean uses [Inferno Saw] and kills an enemy, she will gain Heal Over Time for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "DEF %",
+    "partyImprint": "RES",
+    "selfBuffs": ["Heal Over Time", "Defense"],
+    "partyBuffs": [],
+    "debuffs": ["Provoke"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Della",
+    "element": "Crystal",
+    "role": "Tank",
+    "rarity": 4,
+    "hp": 7048,
+    "atk": 1293,
+    "def": 683,
+    "spd": 99,
     "crit": 12,
     "cdmg": 150,
     "acc": 0,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "20mm Gatling Gun",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Della fires, causing damage equal to 106% attack power + 5.3% of own maximum health to a single enemy target, with a 35% chance of causing Slow on the target, lasting 2 rounds. There is a 50% chance of reducing [Tooth For A Tooth] cooldown by 1 round.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Slow chance increased by 5%",
+        "DMG is increased by 10%",
+        "Slow chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill2": {
-      "name": "",
+      "name": "Tooth For A Tooth",
       "cooldown": 0,
-      "passive": false,
-      "description": "",
+      "passive": true,
+      "description": "Inflicts damage equal to 106% attack power + 3.2% of own maximum health to all enemy targets, with a 10% chance of causing Stun for 1 round. When being attacked, there is a 20% chance of counterattacking the enemy. If [Tooth For A Tooth] is available during counterattack, use [Tooth For A Tooth] instead. If [Tooth For A Tooth] is on cooldown during counterattack, the cooldown time of all your abilities will be reduced by 1 round.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Counterattack chance increased by 5%",
+        "DMG is increased by 10%",
+        "Counterattack chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Magazine Dump",
+      "cooldown": 5,
       "passive": false,
-      "description": "",
+      "description": "Della unloads until the barrel is overheated, causing damage equal to 84.8% attack power + 10.6% of own maximum health to all enemy targets, with a 35% chance to cause Stun to all targets, lasting for 1 round.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
+    "selfImprint": "HP %",
+    "partyImprint": "HP %",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Stun", "Slow"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Diancht",
+    "element": "Crystal",
+    "role": "Healer",
+    "rarity": 4,
+    "hp": 5778,
+    "atk": 677,
+    "def": 751,
+    "spd": 102,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Inspiring Needle",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 66.8% damage to a single enemy target, and has a 15% chance of causing Stun to the target for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Stun chance is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Injection",
+      "cooldown": 2,
+      "passive": false,
+      "description": "Recover health equal to 21.2% of the target's maximum health for a single ally other than yourself, Cleanse the target, and grant 1-2 Random Buffs to the target.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Therapeutic Fountain",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Heal all allies equal to 21.2% of own maximum health, and grant 1-2 Random Buffs to the targets.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 15%",
+        "Reduce cooldown by 1 turn",
+        "Heal increased by 15%"
+      ]
+    },
+    "selfImprint": "HP %",
+    "partyImprint": "HP %",
+    "selfBuffs": ["Random"],
+    "partyBuffs": ["Random", "Cleanse"],
+    "debuffs": ["Stun"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Erica",
+    "element": "Molten",
+    "role": "Tactics",
+    "rarity": 4,
+    "hp": 5768,
+    "atk": 1096,
+    "def": 738,
+    "spd": 114,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 18,
+    "ass": 3,
+    "skill1": {
+      "name": "Blossoming Starlight",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Erica uses the [Tyrant Star] to emit a stream of light particles, causing 76.3% damage to a single enemy target, and there is a 25% chance to dispel 1 buff off the target. If you have a buff, enhance [Blossoming Starlight]. Blossoming Starlight: Inflicts 76.3% damage to all enemy targets, and has a chance to dispel 1 buff off the targets.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Resonating Star",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Any repel effect on the action bar Erica receives is reduced by 80%; when she is attacked, she boosts the action bar by 10% for a random ally.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Increase action bar reduction by 5%",
+        "Increase action bar boost by 2%",
+        "Increase action bar reduction by 5%",
+        "Increase action bar boost by 3%",
+        "Increase action bar reduction by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Meteorite Blast",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Erica lifts the restriction of [Tyrant Star] and attacks the enemy with maximum power, causing 104.9% attack damage to all enemy targets. There is a 60% chance of causing Silence to the targets for 2 rounds. Grant herself a Speed Buff for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Silence chance increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Silence chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Speed"],
+    "partyBuffs": [],
+    "debuffs": ["Dispel", "Silence"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Feidy",
+    "element": "Crystal",
+    "role": "Tank",
+    "rarity": 4,
+    "hp": 5818,
+    "atk": 1096,
+    "def": 682,
+    "spd": 113,
+    "crit": 24,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Spider Howitzer",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Feidy launches a grenade, causing damage equal to 76.3% attack power + 5.1% of own maximum health to a single enemy target. In Guard Mode, after inflicting damage, the ally with the lowest proportion of health will be given a Barrier equal to 15% of their own maximum health for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Spider Thundermine",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Release spider mines to the enemy, causing 80.6% damage to all enemy targets, cause Anti-Heal for 2 rounds, and an 80% chance to shorten the duration of the target's buffs by 2 rounds. In Guard Mode, enhance buff reduction effect to: 80% chance to Dispel all the target's buffs.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Increase shorten/dispel chance by 5%",
+        "DMG is increased by 5%",
+        "Increase shorten/dispel chance by 5%",
+        "DMG is increased by 10%",
+        "Increase shorten/dispel chance by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Guard Mode",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Feidy enters Guard Mode, Cleanses all allies, and increases energy value by 100 [Max: 100]. In Guard Mode, the damage taken by all allies is reduced by 15%. Decrease the energy value by 20 when attacked, and reduce the energy value by 10 when an ally is attacked. When the energy value returns to 0, Guard Mode ends.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": ["Reduce cooldown by 1 turn"]
+    },
+    "selfImprint": "RES",
+    "partyImprint": "RES",
+    "selfBuffs": ["Cleanse", "Barrier"],
+    "partyBuffs": ["Cleanse", "Barrier"],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Foxy",
+    "element": "Thunder",
+    "role": "Tactics",
+    "rarity": 3,
+    "hp": 5813,
+    "atk": 978,
+    "def": 625,
+    "spd": 111,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 30,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Standard Shot",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 95.4% damage to a single enemy target. If a critical strike is triggered, this skill will increase the damage by an additional 30%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Point Blank Shot",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflict 133.6% damage to a single enemy target, with a 75% chance of causing Defense Down for 2 rounds; a 50% chance of causing Stun for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Status chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Status chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Edge of the Light",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 67.8% damage to all enemy targets, and grants all allies Crit Up for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "ATK",
+    "selfBuffs": ["Crit"],
+    "partyBuffs": ["Crit"],
+    "debuffs": ["Stun", "Defense"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Ghost",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 6654,
+    "atk": 1305,
+    "def": 635,
+    "spd": 115,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 30,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Hidden Blade",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflict 106% damage on a single enemy target, with a 35% chance of causing Defense Down to the target, lasting for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Defense Down chance increased by 5%",
+        "DMG is increased by 5%",
+        "Defense Down chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Severing the Air",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflicts 95.4% damage to all enemy targets. When the target has a buff, the damage is increased by 15%; dispel 1 buff on the target and extends all her buffs by 1 round; additionally there is a 50% chance to cause Silence to a random enemy target for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Silence chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Silence chance increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Overloaded Assault",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflict 201.4% damage to a single enemy target. When the target has a buff, the damage is increased by 20%; all the buffs on the target are removed, gain Speed Buff for 2 rounds; if you already have that, gain Greater Speed Buff instead.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Speed"],
+    "partyBuffs": [],
+    "debuffs": ["Dispel", "Silence", "Defense"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Ginga",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 6654,
+    "atk": 1305,
+    "def": 635,
+    "spd": 115,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 30,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Blooming Silver Moon",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 106% damage on a single enemy target, with a 35% chance of causing 2 Shock for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Shock chance increased by 5%",
+        "DMG is increased by 10%",
+        "Shock chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Victorious Aura",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Ginga cooperates with her Shikigami to attack the target, causing 132.5% damage to the single enemy target, and a 85% chance of causing Shock for 2 rounds. If the target has Shock after the attack, [Blooming Silver Moon] will be used additionally. When an additional attack is added, the chance of triggering Shock is increased to 100%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Shock chance increased by 5%",
+        "DMG is increased by 10%",
+        "Shock chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Shikigami 'Lord Hakuzousu'",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Ginga cooperates with her Shikigami to perform a powerful attack, causing 180.2% damage to a single enemy target. Each debuff on the target will increase the damage by 20%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "ACC",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Shock"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Goya",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 4,
+    "hp": 7048,
+    "atk": 1293,
+    "def": 683,
+    "spd": 99,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Purify",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Goya uses flames to purify evil, causing 106% damage to a single enemy target, and has a 25% chance of causing Burn. Lasts for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Burn chance increased by 5%",
+        "DMG is increased by 5%",
+        "Burn chance increased by 10%",
+        "DMG is increased by 10%",
+        "Burn chance increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Pray",
+      "cooldown": 3,
+      "passive": true,
+      "description": "Goya prays to the gods, when she is attacked, gains Attack Buff for 2 rounds. This skill is triggered once every 3 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": ["Reduce cooldown by 1 turn"]
+    },
+    "skill3": {
+      "name": "Execute",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Goya uses the blade in the prosthetic arm for close combat, causing 143.1% damage to a single enemy target. There is a 75% chance to cause Anti-Heal, Burn and Defense Down, lasting for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Status chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Status chance increased by 15%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Attack"],
+    "partyBuffs": [],
+    "debuffs": ["Burn", "Anti-Heal", "Defense"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Grace",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 3,
+    "hp": 6391,
+    "atk": 1106,
+    "def": 670,
+    "spd": 106,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Free Firing",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Grace fires down range, causing 121.9% damage to a single enemy target. If a critical strike is triggered, the cooldown of all her skills will be reduced by 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Survival Instinct",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Your own Critical Strike Chance and Crit Resistance are increased by 30%; when an attack triggers a critical strike, advance own action bar by 20%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Increase Critical Strike Chance and Crit Resistance by 5%",
+        "Increase Critical Strike Chance and Crit Resistance by 5%",
+        "Increase Critical Strike Chance and Crit Resistance by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "White Phosphorous Bombs",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Grace releases all of her incendiary bombs, causing 106% damage to all enemy targets. For every 1% of health lost on targets, the damage increases by 0.2%. If a critical strike is triggered, this skill will increase its damage by an additional 30%. The cooldown of this skill is reset when a target is killed.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ATK",
+    "partyImprint": "HP",
     "selfBuffs": [],
     "partyBuffs": [],
     "debuffs": [],
@@ -1115,48 +1768,344 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
+    "name": "Gray",
+    "element": "Molten",
+    "role": "Tactics",
+    "rarity": 3,
+    "hp": 6640,
+    "atk": 1179,
+    "def": 653,
+    "spd": 94,
     "crit": 12,
     "cdmg": 150,
     "acc": 0,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Thermal Blade 'Ardent Teeth'",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Grey uses 'Ardent Teeth' to attack the enemy, causing 111.3% damage to the single enemy target. There is a 35% chance to cause Provoke, lasts for 1 round.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Provoke chance increased by 5%",
+        "DMG is increased by 5%",
+        "Provoke chance increased by 5%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill2": {
-      "name": "",
+      "name": "Knawing Teeth",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 167% damage to a single enemy target with an 80% chance of causing Anti-Heal, which lasts for 2 rounds. At the same time, repel the target's action bar by 30%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Anti-Heal chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Anti-Heal chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Shoulder Cannon",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflicts 74.2% damage on all enemy targets, with a 50% chance to cause Attack Down for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Anti-Heal chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Anti-Heal chance increased by 15%",
+        "DMG is increased by 20%"
+      ]
+    },
+    "selfImprint": "ATK",
+    "partyImprint": "DEF",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Attack", "Anti-Heal", "Provoke"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Hearin",
+    "element": "Crystal",
+    "role": "Healer",
+    "rarity": 5,
+    "hp": 6784,
+    "atk": 710,
+    "def": 894,
+    "spd": 91,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Impeding Shot",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Inflicts 106% damage on a single enemy target and restore health equal to 7% of own maximum health towards the ally with the lowest amount health.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Heal increased by 15%",
+        "DMG is increased by 5%",
+        "Heal increased by 20%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Restoration Grenade",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Hearin restores the confidence of her students and gives all allies Heal Over Time for 2 rounds, and restores all allies health equal to 30% of health they've lost. Cleanse the ally with the lowest proportional health and advance their action bar by 35%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Repleneshment Request",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Hearin asks the students to regroup, Cleanses all allies, restores all allies health based off 35% of own max health, advance her own action bar by 50% and advances allies action bar by 15%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Heal increased by 5%",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
+    },
+    "selfImprint": "RES",
+    "partyImprint": "HP %",
+    "selfBuffs": [],
+    "partyBuffs": ["Cleanse", "Heal Over Time"],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "10 SPD",
+      "hp": 807,
+      "atk": 224,
+      "skillEffect": "At the end of any enemy character's turn, if there's an ally with a debuff, advance your own action bar 10%."
+    }
+  },
+  {
+    "name": "Hokutou",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 6141,
+    "atk": 1300,
+    "def": 557,
+    "spd": 127,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Blooming Sunlight",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Hokutou attacks the target, causing 90.1% damage to a single enemy target. For every 1% of its health lost, the damage is increased by 0.12%. There is a 35% chance to cause Blind for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Blind chance increased by 5%",
+        "DMG is increased by 5%",
+        "Blind chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Defy Death",
+      "cooldown": 8,
+      "passive": true,
+      "description": "Shikigami will protect Hokutou from a fatal attack. When Hokutou receives lethal damage, the damage is negated and the cooldown of 'Kuro Gongen' is reset. After this effect is triggered, [Blooming Sunlight] will cause 90.1% of the damage to all enemies, but it will not trigger a dual attack. This effect can be triggered once every 8 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Reduce cooldown by 1 turn",
+        "Reduce cooldown by 1 turn",
+        "Reduce cooldown by 1 turn"
+      ]
+    },
+    "skill3": {
+      "name": "Shikigami 'Kuro Gongen'",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Hokutou cooperates with her Shikigami to attack the target, causing 162.2% damage to a single target. For every 1% of its life lost, the damage is increased by 0.3%, and causing the target to be Stunned for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Invincibility"],
+    "partyBuffs": [],
+    "debuffs": ["Blind", "Stun"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Iberis",
+    "element": "Thunder",
+    "role": "Tactics",
+    "rarity": 4,
+    "hp": 5768,
+    "atk": 1096,
+    "def": 738,
+    "spd": 114,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 18,
+    "ass": 3,
+    "skill1": {
+      "name": "Prelude",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Iberis attacks a single enemy target, causing 106% attack damage. There is a 35% chance to give a random ally a Random Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Buff chance increased by 5%",
+        "Buff chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Wide Area Hymn",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Iberis uses sound waves to protect allies and grants all allies a Barrier equal to 100% of each own's attack power and Resistance for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": ["Shield increased by 10%", "Reduce cooldown by 1 turn"]
+    },
+    "skill3": {
+      "name": "Revolving Tune",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Iberis uses sound waves to attack the enemy, causing 75.5% damage to all enemy targets, and has a 60% chance of causing Stun for 1 round, and a 60% chance of causing Restricted for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Status chance increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Status chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "RES",
+    "selfBuffs": ["Barrier", "Resistance", "Random"],
+    "partyBuffs": ["Barrier", "Resistance", "Random"],
+    "debuffs": ["Stun", "Restricted"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Ivey",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 3,
+    "hp": 6640,
+    "atk": 1179,
+    "def": 653,
+    "spd": 96,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Blazing Ambition",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Ivey hits the enemy hard, causing 106% damage to the single enemy target. For every 1% of target's missing health, the damage increases by 0.5%; there is a 30% chance to cause Buff Block for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Buff Block chance increased by 10%",
+        "DMG is increased by 5%",
+        "Buff Block chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Ore Manufactoring",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Ivey maintains composure by drinking their factions special motor oil, granting herself Extra Turn, and giving herself Crit Up, lasting for 2 rounds.",
       "cost": 0,
       "gain": 0,
       "upgrades": []
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Proof of Loyalty",
+      "cooldown": 5,
       "passive": false,
-      "description": "",
+      "description": "Ivey throws her axe, causing 127.2% damage to a single enemy target. For every 1% of the target’s missing health, the damage increases by 0.5%; there is a 50% chance to cause Defense Down and Anti-Heal, that lasts for 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Status chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Status chance increased by 15%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
+    "selfImprint": "CRIT",
+    "partyImprint": "ATK",
     "selfBuffs": [],
     "partyBuffs": [],
     "debuffs": [],
@@ -1168,48 +2117,208 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
+    "name": "Kagari",
+    "element": "Molten",
+    "role": "Tactics",
+    "rarity": 5,
+    "hp": 5721,
+    "atk": 1504,
+    "def": 613,
+    "spd": 126,
     "crit": 12,
     "cdmg": 150,
     "acc": 0,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Judgement Obstruction",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Inflicts 116.6% damage to a single enemy target and repel 15% of the action bar.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Action Bar repel increased by 2%",
+        "DMG is increased by 10%",
+        "Action Bar repel increased by 3%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill2": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Reversal Sweep",
+      "cooldown": 3,
       "passive": false,
-      "description": "",
+      "description": "Inflicts 74.2% damage to all enemy targets and repel 20% of the enemies action bar. Inflict Attack Down on all targets for 1 round. Every time you successfully repel a targets action bar, advance your own action bar by 20%.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Action Bar repel increased by 5%",
+        "DMG is increased by 10%",
+        "Action Bar repel increased by 5%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Severing the Darkness",
+      "cooldown": 5,
       "passive": false,
-      "description": "",
+      "description": "Inflicts 169.6% damage on a single enemy target, removes all buffs from the target, and causes Slow for 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
+    "selfImprint": "ATK %",
+    "partyImprint": "ACC",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Attack", "Dispel", "Slow"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Kanna",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 3,
+    "hp": 4931,
+    "atk": 970,
+    "def": 570,
+    "spd": 119,
+    "crit": 28,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Breakthrough Thrust",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 95.4% damage to a single enemy target, and increases the damage by 0.075% per 1 point of speed. There is a 35% chance to cause Blind for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Blind chance increased by 5%",
+        "DMG is increased by 10%",
+        "Blind chance increased by 5%",
+        "Blind chance increased by 5%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Reflective Coating",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Evasion increased by 35%. When she successfully evades, gives Stealth for 1 round, and reduces the cooldown of own skills by 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Evasion increased by 5%",
+        "Evasion increased by 5%",
+        "Evasion increased by 5%"
+      ]
+    },
+    "skill3": {
+      "name": "Emergency Seal",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 162.2% damage to a single enemy target, increases the damage by 0.15% for every 1 point of speed, and increases the cooldown of target's skills by 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ATK",
+    "partyImprint": "ATK",
+    "selfBuffs": ["Stealth"],
+    "partyBuffs": [],
+    "debuffs": ["Blind"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Katie",
+    "element": "Crystal",
+    "role": "Assault",
+    "rarity": 3,
+    "hp": 5626,
+    "atk": 1339,
+    "def": 625,
+    "spd": 103,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Cat's Flash",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflict 95.4% damage to the single enemy target. This attack will be counted as having elemental advantage.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Cat's March",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Each attack will increase Katie's skill damage, stacking up to 5 times; Katie's attack will randomly repel the target's action bar by 15% or advance her own action bar by 20%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Action bar change increase by 1%",
+        "Action bar change increase by 1%",
+        "Action bar change increase by 1%",
+        "Action bar change increase by 1%",
+        "Action bar change increase by 1%"
+      ]
+    },
+    "skill3": {
+      "name": "Cat's First Gate 'Round-trip'",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Katie uses her dexterous posture to attack the enemy, causing 159% damage to a single enemy target. For every 1% of the target's health lost, damage increases by 0.5%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "CRIT",
+    "partyImprint": "ATK",
     "selfBuffs": [],
     "partyBuffs": [],
     "debuffs": [],
@@ -1221,48 +2330,2121 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
+    "name": "Komachi",
+    "element": "Molten",
+    "role": "Healer",
+    "rarity": 3,
+    "hp": 6200,
+    "atk": 614,
+    "def": 814,
+    "spd": 88,
     "crit": 12,
     "cdmg": 150,
     "acc": 0,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Falling Sakura",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Inflict 106% damage on a single enemy target, with a 75% chance to Cleanse 1 debuff off an ally that has a debuff.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "Cleanse chance increased by 10%",
+        "Cleanse chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill2": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Sakura's Protection",
+      "cooldown": 3,
       "passive": false,
-      "description": "",
+      "description": "Heal 26.5% of the target's maximum health for a single ally, and grant Heal Over Time for 3 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Heal increased by 10%",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Circulating Sakura",
+      "cooldown": 5,
       "passive": false,
-      "description": "",
+      "description": "Restores 21.2% of the target's maximum health for all allies, and grants Speed Buff and Defense Buff for 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "Heal increased by 10%",
+        "Heal increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
+    "selfImprint": "HP",
+    "partyImprint": "HP",
+    "selfBuffs": ["Speed", "Defense", "Heal Over Time", "Cleanse"],
+    "partyBuffs": ["Speed", "Defense", "Heal Over Time", "Cleanse"],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Kurumi",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 4,
+    "hp": 6300,
+    "atk": 1106,
+    "def": 817,
+    "spd": 96,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Break Apart",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Kurumi swings with the power of crushing boulders, causing 106% damage to a single enemy target. For every 1% of own health lost, damage is increased by 0.5%. Heal 35% of the damage dealt.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Heal increased by 5%",
+        "DMG is increased by 10%",
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Dauntless",
+      "cooldown": 9,
+      "passive": true,
+      "description": "Kurumi is full of enthusiasm. When she takes fatal damage, put health to 1 and gain Immortality for 1 round. This skill can only activate once every 9 rounds. When receiving a critical attack, reduce the cooldown of all your skills by 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Reduce cooldown by 1 turn",
+        "Reduce cooldown by 1 turn",
+        "Reduce cooldown by 1 turn"
+      ]
+    },
+    "skill3": {
+      "name": "Mountain Collapse",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Kurumi swings with all her strength to dispel 2 buffs, then cause 135.2% damage to a single enemy target. For every 1% of own health lost, damage increases by 0.5%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ATK",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Invincibility"],
+    "partyBuffs": [],
+    "debuffs": ["Dispel"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Lydia",
+    "element": "Crystal",
+    "role": "Balance",
+    "rarity": 5,
+    "hp": 6696,
+    "atk": 1192,
+    "def": 850,
+    "spd": 98,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 12,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Warming Up",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 95.4% damage to a single enemy target, restores health equal to 12% damage dealt, and has a 20% chance of causing the Attack Down, lasting for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Attack Down chance increased by 5%",
+        "DMG is increased by 10%",
+        "Attack Down chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Butterfly Stance",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Critical strike is guaranteed when all your skills hit. When attacked, the cooldown of [Ending Break] is reduced by 1 round, and the attack on your own turn, reduces it by 2 rounds. When [Ending Break] is on cooldown, damage received is reduced by 10%. After being attacked and before the end of the next round, your normal attack deals damage to all enemies.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Received damage further reduced by 2%",
+        "Received damage further reduced by 2%",
+        "Received damage further reduced by 2%",
+        "Received damage further reduced by 2%",
+        "Received damage further reduced by 2%"
+      ]
+    },
+    "skill3": {
+      "name": "Ending Break",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Inflicts 133.6% damage to all enemy targets, with a 75% chance of causing Anti-Heal, for 2 rounds. When the battle begins, this skill starts at max cooldown.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Anti-Heal chance increased by 10%",
+        "DMG is increased by 15%",
+        "Anti-Heal chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "DEF %",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Anti-Heal", "Attack"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Maika",
+    "element": "Molten",
+    "role": "Tank",
+    "rarity": 4,
+    "hp": 7699,
+    "atk": 1036,
+    "def": 721,
+    "spd": 102,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Sword Skill 'Shattering Wind'",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Maika uses her cherished blade 'Shan', causing damage equal to 106% attack power + 4.2% of own maximum health to a single enemy target. There is a 20% chance to cause Stun the target for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Stun chance is increased by 5%",
+        "Stun chance is increased by 5%",
+        "DMG is increased by 10%",
+        "Stun chance is increased by 5%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "SevenS Martial Spirit",
+      "cooldown": 0,
+      "passive": true,
+      "description": "When an ally is attacked, advance said ally's action bar by 5%; when Maika is attacked, advance all alies action bar by 10%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Increases action boost by 1%",
+        "Increases action boost by 2%",
+        "Increases action boost by 2%"
+      ]
+    },
+    "skill3": {
+      "name": "Sword Skill 'Guren's Dance'",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Maika uses her marvelous sword skills, causing damage equal to 84.8% attack power + 6.4% of own maximum health to all enemy targets; grants all allies Attack Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "HP %",
+    "partyImprint": "ASS",
+    "selfBuffs": ["Attack"],
+    "partyBuffs": ["Attack"],
+    "debuffs": ["Stun"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Margot",
+    "element": "Crystal",
+    "role": "Healer",
+    "rarity": 3,
+    "hp": 5680,
+    "atk": 614,
+    "def": 841,
+    "spd": 95,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Gentle Peck",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Release 'Velvet' to cause 106% damage to a single enemy target. There is a 50% chance to Cleanse 1 debuff from a random ally.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Cleanse chance increased by 10%",
+        "DMG is increased by 10%",
+        "Cleanse chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Spread Wings",
+      "cooldown": 2,
+      "passive": false,
+      "description": "'Velvet' releases a special aura, Cleansing 1 debuff on all allies, and restores 10% of the ally's maximum health. Grants herself Speed Buff for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Heal increased by 10%",
+        "Heal increased by 10%",
+        "Heal increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Feather Fall",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Restore 40% of an ally's maximum health, Cleanses all debuffs and grants Immunity for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Heal increased by 10%",
+        "Heal increased by 10%",
+        "Heal increased by 15%"
+      ]
+    },
+    "selfImprint": "RES",
+    "partyImprint": "HP",
+    "selfBuffs": ["Cleanse", "Immunity", "Speed"],
+    "partyBuffs": ["Cleanse", "Immunity"],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Meko",
+    "element": "Crystal",
+    "role": "Tactics",
+    "rarity": 3,
+    "hp": 5396,
+    "atk": 1176,
+    "def": 608,
+    "spd": 111,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Guide to Etiquitte",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflict 90.6% damage to a single enemy target, with a 25% chance of causing Silence to the target, lasting for 1 round. If the target is Marked, the chance of causing Silence is increased by 25%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Silence chance increased by 10%",
+        "DMG is increased by 5%",
+        "Silence chance increased by 15%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Maid's Principle",
+      "cooldown": 0,
+      "passive": true,
+      "description": "At the beginning of your own round, there is an 80% chance to Mark an enemy for 2 rounds. At the beginning of your own round, if there is already a target Marked, give yourself Hit Up for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Mark chance increased by 5%",
+        "Mark chance increased by 5%",
+        "Mark chance increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "King Welcoming",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflict 171.7% damage on a single enemy target. There is an 80% chance to Stun the target for 2 rounds. If the target is Marked, it will become 80% chance to Stun the target for 2 rounds and Dispel 2 buffs off the target.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Status chance increased by 10%",
+        "Status chance increased by 10%",
+        "DMG is increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "ATK",
+    "selfBuffs": ["Accuracy"],
+    "partyBuffs": [],
+    "debuffs": ["Dispel", "Stun", "Mark", "Silence"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Michelle",
+    "element": "Crystal",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 5260,
+    "atk": 1390,
+    "def": 782,
+    "spd": 106,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 30,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Electromagnetic Railgun",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Michelle launches an electromagnetic railgun shot on her shoulder, causing 111.3% damage to a single enemy target, with a 35% chance of causing Burn, for 2 rounds. After the attack, if the target has a Burn, the cooldown of [All Armed Fire] will be reduced by 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Burn chance increased by 5%",
+        "Burn chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Armed Preparation",
+      "cooldown": 0,
+      "passive": true,
+      "description": "After using [All Armed Fire], if there is an enemy target with a Burn, [Armed Preparation] will be used additionally. [Armed Preparation]: Give all allies Attack Buff for 2 rounds and advance your own action bar by 35%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Increase action bar boost by 2%",
+        "Increase action bar boost by 3%",
+        "Increase action bar boost by 5%",
+        "Increase action bar boost by 5%"
+      ]
+    },
+    "skill3": {
+      "name": "All Armed Fire",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Inflicts 90.1% damage to all enemy targets, and has a 70% chance of inflicting 2 Burns on the target for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Burn chance increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Burn chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "CRIT",
+    "selfBuffs": ["Attack"],
+    "partyBuffs": ["Attack"],
+    "debuffs": ["Burn"],
+    "specialEq": {
+      "mainStat": "16% ACC",
+      "hp": 478,
+      "atk": 314,
+      "skillEffect": "All Armed Fire gains the effect: There is an 85% chance to dispel 1 buff off the target, which takes precedence over the Burn status. If an enemy has a Burn, gain 16% damage reduction and increase damage by 20%. If all enemies have a Burn, gain 30% damage reduction. Only the highest % damage reduction will apply."
+    }
+  },
+  {
+    "name": "Milvus",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 5628,
+    "atk": 1585,
+    "def": 751,
+    "spd": 111,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Raptor Claw",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Milvius launches an attack on the enemy, causing 106% damage to a single enemy target, and has a 50% chance of causing Blind to the target, which lasts for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Blind chance increased by 10%",
+        "DMG is increased by 10%",
+        "Blind chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Laceration Cannon",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Milvus deploys her combined cannon, causing 84.8% damage to all enemy targets. This attack will be counted as having elemental advantage, and the cooldown of this skill is reset when the target is killed.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Raptor's Trial",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Milvus launches an attack from a high altitude, causing 111.3% damage to all enemy targets, with a 70% chance to cause Defense Down, lasts for 2 rounds and a 70% chance to cause Paralyzed, lasts for 1 round; advance the action bar by 30%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Status chance increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Status chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "CRIT",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Defense", "Paralyze", "Blind"],
+    "specialEq": {
+      "mainStat": "ATK 10%",
+      "hp": 643,
+      "atk": 269,
+      "skillEffect": "Lowers the cooldown of [Laceration Cannon] by 1 round. Also has a 100% chance to lower the cooldown of [Raptor's Trial] when used."
+    }
+  },
+  {
+    "name": "Morris",
+    "element": "Molten",
+    "role": "Healer",
+    "rarity": 4,
+    "hp": 5730,
+    "atk": 690,
+    "def": 760,
+    "spd": 101,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 18,
+    "ass": 3,
+    "skill1": {
+      "name": "Fire For Protection",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Morris quickly attacks a single enemy target causing 106% damage, with a 35% chance of causing Blind that lasts for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Blind chance increased by 5%",
+        "DMG is increased by 10%",
+        "Blind chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Emergency Mist Treatment",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Morris activates a healing spray to restore health equal to 15% of own maximum health for a single ally, advancing their action bar by 30%, reducing the cooldown of all their skills by 1 round, and giving a Heal Over Time for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Action bar amount increased by 2%",
+        "Action bar amount increased by 3%",
+        "Action bar amount increased by 5%",
+        "Action bar amount increased by 5%",
+        "Action bar amount increased by 5%"
+      ]
+    },
+    "skill3": {
+      "name": "Pure Cure",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Morris’s cuteness makes everyone rejuvenate. Cleanses and restores health equal to 31.8% of own maximum health for all allies.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
+    },
+    "selfImprint": "HP %",
+    "partyImprint": "RES",
+    "selfBuffs": ["Cleanse", "Heal Over Time"],
+    "partyBuffs": ["Cleanse", "Heal Over Time"],
+    "debuffs": ["Blind"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Neisa",
+    "element": "Crystal",
+    "role": "Healer",
+    "rarity": 4,
+    "hp": 4790,
+    "atk": 1010,
+    "def": 722,
+    "spd": 106,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Conventional Fire",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Neisa shoots the enemy with a gun, causing 151.1% damage to a single enemy target, and restores health equal to 10% of damage dealt to an ally with the lowest proportional health.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Strike and Shoot",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Inflicts 120.8% damage to all enemy targets, and restores health equal to 8% of damage dealt to all allies.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Natural Mist",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Neisa forges a spray into the sky, granting Invincible to an ally, lasting for 1 round, and restoring health equal to 100% of own attack power; grant self Attack Buff for 2 round and grant self an Extra Turn.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
+    },
+    "selfImprint": "CRIT",
+    "partyImprint": "CDMG",
+    "selfBuffs": ["Extra Turn", "Attack", "Invincibility"],
+    "partyBuffs": ["Invincibility"],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Nemophila",
+    "element": "Crystal",
+    "role": "Tank",
+    "rarity": 4,
+    "hp": 7119,
+    "atk": 827,
+    "def": 901,
+    "spd": 89,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 18,
+    "ass": 3,
+    "skill1": {
+      "name": "Lazurite Blade",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Deal damage equal to 76.3% attack power + 57.2% own defense to a single enemy target with a 35% chance to cause Provoke for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Provoke chance increased by 5%",
+        "Provoke chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Lazurite Sphere",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Gives all allies a Barrier equal to 60% of their own defense for 3 rounds. Lazulite Sphere's Passive: When Nemophila is on the field, damage taken for all allies will be reduced by 10% when critically struck. At the end of own turn, she will restore 5% health to all allies.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Barrier amount increased by 10%",
+        "Reduce cooldown by 1 turn"
+      ]
+    },
+    "skill3": {
+      "name": "Lazurite's Brilliance",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Nemophila continuously attacks all enemies, granting herself Defense Buff for 2 rounds and causes damage equal to 28.6% attack power + 47.7% own defense. Has an 85% of causing Blind for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "Blind chance increased by 5%",
+        "DMG is increased by 10%",
+        "Blind chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "DEF %",
+    "partyImprint": "DEF %",
+    "selfBuffs": ["Barrier", "Defense"],
+    "partyBuffs": ["Barrier"],
+    "debuffs": ["Provoke", "Blind"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Nina",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 6372,
+    "atk": 1585,
+    "def": 673,
+    "spd": 105,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Sacred Arclight",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Nina wields a blade-shaped wand, causing 127.2% damage to a single enemy target, with a 50% chance of causing Buff Block to the target for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Buff Block chance increased by 5%",
+        "DMG is increased by 5%",
+        "Buff Block chance increased by 10%",
+        "DMG is increased by 10%",
+        "Buff Block chance increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Daybreak Form",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Nina gathers thunder and light on the wand, resets the cooldown of [Final Daybreak], grants Extra Turn, and grants herself Attack Buff for 2 and Crit Damage Buff rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": ["Reduce cooldown by 1 turn"]
+    },
+    "skill3": {
+      "name": "Final Daybreak",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Nina adjusted the output power of the wand to the maximum output, causing 181.3% damage to the single target. [Final Daybreak's] hit rate is increased by an additional 50%. When killing the target, reduce the cooldown of [Daybreak Form] by 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "CDMG",
+    "selfBuffs": ["Attack", "Critical Damage"],
+    "partyBuffs": [],
+    "debuffs": ["Buff Block"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Nio",
+    "element": "Thunder",
+    "role": "Balanced",
+    "rarity": 3,
+    "hp": 6742,
+    "atk": 865,
+    "def": 772,
+    "spd": 102,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 12,
+    "ass": 3,
+    "skill1": {
+      "name": "Powerful Stream Striker",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Nio uses a silver jet gunblade to attack the enemy, causing damage equal to 95.4% attack power + 4.2% of own maximum health to a single enemy; and granting herself Defense Buff for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Lark Seeker",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Inflict damage equal to 127.2% attack power + 6.4% of own maximum health to a single enemy. There is a 60% chance of causing Defense Down for 2 rounds, and a 60% chance of causing Provoke on the target for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Status chance increased by 5%",
+        "DMG is increased by 10%",
+        "Status chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Lightning Stream Cannon",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Nio drives the silver jet gunsword to its maximum power, causing damage equal to 95.4% attack power + 4.2% of own maximum health to all enemy targets, gives herself a Barrier equal to 25% of her maximum health for 2 rounds and grants all allies Attack Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "HP",
+    "partyImprint": "ATK",
+    "selfBuffs": ["Defense", "Barrier", "Attack"],
+    "partyBuffs": ["Attack"],
+    "debuffs": ["Defense", "Provoke"],
+    "specialEq": {
+      "mainStat": "10% DMG Reduction From Molten Units",
+      "hp": 658,
+      "atk": 120,
+      "skillEffect": "Increase the Defense Down chance of [Lark Seeker] by 25%."
+    }
+  },
+  {
+    "name": "Onean",
+    "element": "Crystal",
+    "role": "Assault",
+    "rarity": 3,
+    "hp": 5626,
+    "atk": 1164,
+    "def": 594,
+    "spd": 115,
+    "crit": 24,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "AR Mode",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Uses 'Renegade' for rapid shooting, causing 95.4% damage to a single enemy target, and increases the damage by 0.075% per 1 point of speed. There is a 35% chance to cause Defense Down for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Defense Down chance increased by 5%",
+        "DMG is increased by 10%",
+        "Defense Down chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "UAV 'Cat Ball'",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Maru-nya will assist in processing battlefield information and improve Onean's combat ability. Each attack has an 80% chance of granted herself Speed Buff for 1 round. If she already has Speed Buff, there is an 80% chance of granting herself Greater Speed Buff instead.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Buff chance increased by 2%",
+        "Buff chance increased by 3%",
+        "Buff chance increased by 5%",
+        "Buff chance increased by 5%",
+        "Buff chance increased by 5%"
+      ]
+    },
+    "skill3": {
+      "name": "SR Mode",
+      "cooldown": 4,
+      "passive": false,
+      "description": "After aiming, Onean deals 159% damage to a single enemy target, increasing the damage by 0.07% per 1 point of speed.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Speed bonus is increased",
+        "DMG is increased by 10%",
+        "Speed bonus is increased",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "CRIT",
+    "partyImprint": "ATK",
+    "selfBuffs": ["Speed"],
+    "partyBuffs": [],
+    "debuffs": ["Defense"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Pele",
+    "element": "Molten",
+    "role": "Healer",
+    "rarity": 3,
+    "hp": 4515,
+    "atk": 936,
+    "def": 685,
+    "spd": 104,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Branding",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 111.3% damage on a single enemy target, and has a 35% chance of causing Slow, which lasts for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Slow chance increased by 5%",
+        "Slow chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Flame's Protection",
+      "cooldown": 0,
+      "passive": true,
+      "description": "When allies, including herself, use attack skills, there is a 30% chance to use [Flame's Protection] to an ally with the most debuffs. [Flame's Protection]: Clear 1 debuff, which can be triggered once per round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Skill chance increased by 5%",
+        "Skill chance increased by 5%",
+        "Skill chance increased by 5%",
+        "Skill chance increased by 5%"
+      ]
+    },
+    "skill3": {
+      "name": "Raging Inferno's Regeneration",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflicts 85.9% damage to all enemy targets, and restores health to all allies equal to 12% of their maximum health and grants all allies Speed Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Heal increased by 10%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "Heal increased by 20%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "HP",
+    "partyImprint": "HP",
+    "selfBuffs": ["Speed", "Cleanse"],
+    "partyBuffs": ["Speed", "Cleanse"],
+    "debuffs": ["Slow"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Phantom",
+    "element": "Crystal",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 5910,
+    "atk": 1504,
+    "def": 1504,
+    "spd": 115,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Phantom Tunnel",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 106% damage to the main target, and 63.6% damage to all enemies outside the main target. Each 1 point of speed increases the damage by 0.075%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Soul Collector",
+      "cooldown": 0,
+      "passive": true,
+      "description": "When you kill an enemy, you give yourself an Attack Buff for 2 rounds, and use [Soul Collector] to perform an additional attack. When you use [Soul Collector] to kill an enemy, the additional attack will not be triggered again. When an enemy target dies, advance your own action bar by 20%.Soul Collector: Inflicts 63.6% of attack damage on all enemy targets, and increases the damage by 0.05% for every 1 point of speed.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Region Break",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 90.1% damage to all enemy targets, and increases the damage by 0.1% for every 1 point of speed.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "SPD",
+    "selfBuffs": ["Attack"],
+    "partyBuffs": [],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Quinn",
+    "element": "Thunder",
+    "role": "Tactics",
+    "rarity": 5,
+    "hp": 6946,
+    "atk": 1340,
+    "def": 635,
+    "spd": 112,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Unconventional Cluster Bomb",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Quinn bombards all enemy targets, causing 50.9% damage to all enemy targets, increasing damage by 0.075% for every 1 point of speed, and a 25% chance to cause Anti-Heal for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Battle Command",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Quinn strengthens all allies, granting Attack Buff, everyone else Speed Buff and herself Greater Speed Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": ["Reduce cooldown by 1 turn"]
+    },
+    "skill3": {
+      "name": "Guided Missile 'Stinger'",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Quinn launches all missiles to attack the enemy, causing 95.4% damage to all enemy targets, repelling 20% of the action bar of all targets. Increase damage by 0.075% for every 1 point of speed.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Action Bar repel increased by 3%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Action Bar repel increased by 3%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Attack", "Speed"],
+    "partyBuffs": ["Attack", "Speed"],
+    "debuffs": ["Anti-Heal"],
+    "specialEq": {
+      "mainStat": "16% ACC",
+      "hp": 807,
+      "atk": 224,
+      "skillEffect": "[Battle Command] also has a 100% chance to randomly grant all allies either Defense Buff or Immunity for 2 Rounds."
+    }
+  },
+  {
+    "name": "Rhoeas",
+    "element": "Molten",
+    "role": "Tank",
+    "rarity": 3,
+    "hp": 6742,
+    "atk": 865,
+    "def": 772,
+    "spd": 95,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 12,
+    "ass": 3,
+    "skill1": {
+      "name": "Scarlet's Impact",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Pierce the enemy, causing damage equal to 70.5% attack power + 2% of own maximum health to a single enemy target; and restores health equal to 20% of the damage dealt.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Heal increased by 5%",
+        "DMG is increased by 10%",
+        "Heal increased by 5%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Treating Everyone Equally",
+      "cooldown": 0,
+      "passive": true,
+      "description": "At the beginning of the battle, give an ally with the lowest health a Barrier. At the beginning of your own round, consume 10% of your current health to grant 10% of your maximum health to an ally with the lowest proportional health other than yourself. The Barrier will last for 2 rounds. At the same time, restore 10% of your maximum health",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Shield increased by 1%",
+        "Shield increased by 2%",
+        "Shield increased by 2%"
+      ]
+    },
+    "skill3": {
+      "name": "Scarlet's Thrust",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflict damage equal to 159% attack power + 5.3% of own maximum health to a single enemy target, with a 75% chance of causing Stun and Shock for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Status chance increased by 10%",
+        "DMG is increased by 10%",
+        "Status chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "HP",
+    "partyImprint": "DEF",
+    "selfBuffs": [],
+    "partyBuffs": ["Barrier"],
+    "debuffs": ["Shock", "Stun"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Roko",
+    "element": "Crystal",
+    "role": "Tactics",
+    "rarity": 3,
+    "hp": 5813,
+    "atk": 978,
+    "def": 625,
+    "spd": 111,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 30,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Chemical Venom Sting",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 106% damage to a single enemy target. For every Corrosion on the target, the damage is increased by 15%; and there is a 20% chance to cause Corrosion, lasts for 2 rounds. When the target has Corrosion, the cooldown of all skills are reduced by 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Corrosion chance increased by 5%",
+        "DMG is increased by 10%",
+        "Corrosion chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Raging Chariot",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflict 106% damage to a single enemy target, and increase the damage by 15% for every Corrosion. Randomly extend all debuffs on the target for 1-2 rounds. When the target has Corrosion, grant herself an Extra Turn.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Corroding Phantom",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 137.8% damage to a single enemy target, with an 80% chance of causing 2 Corrosion for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Corrosion chance increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Corrosion chance increased by 15%",
+        "DMG is increased by 20%"
+      ]
+    },
+    "selfImprint": "HP",
+    "partyImprint": "DEF",
+    "selfBuffs": ["Extra Turn"],
+    "partyBuffs": [],
+    "debuffs": ["Corrosion"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Rosemary",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 4,
+    "hp": 5228,
+    "atk": 1414,
+    "def": 784,
+    "spd": 104,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Rising Uppercut",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 106% damage to a single enemy target, and restores health equal to 25% of damage dealt. When the target does not have a buff, the target's action bar is repelled by 15%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%",
+        "DMG is increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Lightning Fist",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflicts 151.1% damage to a single enemy target. When the target has a buff, dispel all buffs off the target, and use [Rising Uppercut].",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Rapid Fist",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflicts 151.1% damage to a single enemy target, and gains Attack Buff and Speed Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Attack", "Speed"],
+    "partyBuffs": [],
+    "debuffs": ["Dispel"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Ruri",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 4,
+    "hp": 5164,
+    "atk": 1375,
+    "def": 722,
+    "spd": 102,
+    "crit": 24,
+    "cdmg": 160,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Sword Skill 'Monsoon'",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Ruri jumps high and smashes down from the air, causing 106% damage to a single enemy target, and a 30% chance of causing Buff Block, lasting for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "Buff Block chance increased by 10%",
+        "Buff Block chance increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Sword Skill 'Gust'",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflicts 85.9% damage to all enemy targets. This attack will be counted as having elemental advantage. If the target is killed, reduce the cooldown of all own skills by 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Secret Technique 'Rampaging Vision'",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Ruri performs a secret technique, causing 101.8% damage to all enemy targets. When causing a Critical Strike to at least 2 targets, gain an Extra Turn and grant self Attack Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "CRIT",
+    "partyImprint": "HP %",
+    "selfBuffs": ["Attack", "Extra Turn"],
+    "partyBuffs": [],
+    "debuffs": ["Buff Block"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Senba",
+    "element": "Crystal",
+    "role": "Assault",
+    "rarity": 4,
+    "hp": 6796,
+    "atk": 1316,
+    "def": 530,
+    "spd": 111,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Crane's Bow",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Senha draws her longbow and fires, causing 106% damage to a single enemy target and restoring her health equal to 50% of damage dealt. Grant self Speed Buff for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "HP restored is increased by 15%",
+        "DMG is increased by 10%",
+        "HP restored is increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Crane's Care",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Increase attack power by 0.6% for every 1% of health lost. When own health is less than 50%, increase own speed by 60%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "ATK increase by 5%",
+        "ATK increase by 10%",
+        "ATK increase by 10%",
+        "ATK increase by 10%",
+        "ATK increase by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "Senbazuru",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 120.8% damage to all enemy targets and consumes 20% of her current health. When you kill a target, give yourself E-Kit for 2 rounds and advance own action bar by 50%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Speed", "Emergency Device"],
+    "partyBuffs": [],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Shinobu",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 7253,
+    "atk": 1423,
+    "def": 541,
+    "spd": 115,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Ninjutsu 'Rising Moon'",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 100.7% of attack damage on a single enemy target. For every 1% of the target's health lost, the damage increases by 0.2%, and transfer 1 of the target's buffs to self",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Ninjutsu 'The Whole World'",
+      "cooldown": 0,
+      "passive": true,
+      "description": "After using [Rising Moon], if the target's health value is less than 50% of their maximum health value, additional use of [The Whole World]; if the target's health value is higher than 50% of the maximum health value, then advance own action bar by 20%. [The Whole World]: Inflict 104.2% attack damage on all enemy targets. This additional attack can only be triggered during own turn.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Skill DMG is increased by 5%",
+        "Skill DMG is increased by 5%",
+        "Skill DMG is increased by 5%",
+        "Skill DMG is increased by 5%",
+        "Skill DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Ninjutsu 'Dark Rakshasi'",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Inflicts 244.8% damage on a single enemy target. For each 1% loss of the target's health, the damage increases by 0.3%; causes Paralyze to the target, which lasts for 1 round. If [Dark Rakshasi] kills the target, additional use of [Rising Moon]. [Rising Moon]: Inflict damage to all enemy targets, with a 50% chance of causing Shock, for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ATK %",
+    "partyImprint": "ATK %",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Paralyze", "Shock"],
+    "specialEq": {
+      "mainStat": "15% CDMG",
+      "hp": 643,
+      "atk": 269,
+      "skillEffect": "Ninjutsu 'Dark Rakshasi' gains 15% Penetration."
+    }
+  },
+  {
+    "name": "Shinonome",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 3,
+    "hp": 6391,
+    "atk": 1106,
+    "def": 670,
+    "spd": 106,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Bloody Slice",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 90.1% damage to a single enemy target, and has a 50% chance of causing Burn for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Reserved Oni",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Shinonome's attack will not trigger a critical strike. Increases her attack power by 0.2% for every 1% Crit Rate, and increases by 0.1% for every 1% of Crit Damage. This effect is refreshed at the beginning of any turn. Increases own Critical Strike Resistance by 80%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Conversion rate increased",
+        "Conversion rate increased",
+        "Conversion rate increased",
+        "Conversion rate increased",
+        "Conversion rate increased"
+      ]
+    },
+    "skill3": {
+      "name": "Bloody Shadow Spear",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Inflicts 180.2% damage to a single enemy target, and causes Burn and Defense Down for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ASS",
+    "partyImprint": "HP",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Burn", "Defense"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Shura",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 8507,
+    "atk": 1109,
+    "def": 759,
+    "spd": 109,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Heaven Crusher",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Shura slashes violently, causing damage equal to 106% attack + 10.6% of own maximum health to a single target. There is a 35% chance of causing Defense Down to the target. Lasts for 2 rounds. When in Shura Mode this attack can't be countered.",
+      "cost": 0,
+      "gain": 15,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Defense Down chance increased by 5%",
+        "DMG is increased by 10%",
+        "Defense Down chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Triple Armor Shock",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Inflict damage equal to 127.2% attack + 10.6% of own maximum health to a single target; there is a 100% chace of causing a Defense Down to the target for 2 rounds. When in Shura Mode, Triple Armor Shock ignores the target's Resistance; when you kill the target, you get an additional 30 energy points.",
+      "cost": 0,
+      "gain": 30,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill3": {
+      "name": "The Cycle of Life and Death",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Cleanse self of debuffs and enter Shura Mode. Inflict damage equal to 143.1% attack + 28.6% of own maximum health to a single enemy target, and cause Attack Down for 2 rounds. Your own skills gain energy points, and when you are attacked, it consumes 20 energy points. Shura Mode: Enter Shura Mode and skill effects will be improved. At the end of own turn, consumes 15 energy points; at the end of any character's turn, if own energy value is 0, Shura Mode ends.",
+      "cost": 0,
+      "gain": 80,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "HP %",
+    "partyImprint": "HP %",
+    "selfBuffs": ["Cleanse"],
+    "partyBuffs": [],
+    "debuffs": ["Attack", "Defense"],
+    "specialEq": {
+      "mainStat": "10 SPD",
+      "hp": 643,
+      "atk": 269,
+      "skillEffect": "While in Shura Mode, after taking damage, gain a Barrier equal to 20% of missing health. Lasts for 2 rounds. Also, while in Shura Mode, Shura can't take more than 70% of her max health in damage."
+    }
+  },
+  {
+    "name": "Sirius",
+    "element": "Crystal",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 6141,
+    "atk": 1300,
+    "def": 557,
+    "spd": 127,
+    "crit": 20,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Shooting Star",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 135.9% damage to a single enemy target, and increases damage by 0.075% per 1 point of speed. When you have a Speed Buff, it will cause Defense Down to the target for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Pinpoint Breakthrough",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Inflicts 163.1% damage to a single enemy target, and increases damage by 0.075% per 1 point of speed; grants herself a Speed Buff for 2 rounds. If you trigger a critical strike, you are granted an Extra Turn.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Sapphire Starfall",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Inflicts 220.5% damage to a single enemy target, and increases damage by 0.2% per 1 point of speed. This skill will be counted as having elemental advantage towards the target. When you kill the target, extend all your buffs for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "CRIT",
+    "partyImprint": "ATK %",
+    "selfBuffs": ["Speed", "Extra Turn"],
+    "partyBuffs": [],
+    "debuffs": ["Defense"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Sonya",
+    "element": "Thunder",
+    "role": "Tactics",
+    "rarity": 3,
+    "hp": 4515,
+    "atk": 1204,
+    "def": 694,
+    "spd": 110,
+    "crit": 24,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Mass Energy Shot",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflict 100.7% damage to a single enemy target, with a 35% chance of causing Shock. Lasts for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Shock chance increased by 5%",
+        "DMG is increased by 10%",
+        "Shock chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Instinctual Reaction",
+      "cooldown": 0,
+      "passive": true,
+      "description": "When being attacked, gain a Barrier equal to 60% of own attack power, that lasts for 1 round, and cause up to 2 Shock to the attacker for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Additional Shock chance increased by 20%",
+        "Additional Shock chance increased by 20%",
+        "Additional Shock chance increased by 20%"
+      ]
+    },
+    "skill3": {
+      "name": "Powered Energy Blade",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Inflict 106% attack damage to all enemy targets, and causes all target's Shock to Detonate; grant herself Speed Buff for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 15%"
+      ]
+    },
+    "selfImprint": "ATK",
+    "partyImprint": "ATK",
+    "selfBuffs": ["Barrier", "Speed"],
+    "partyBuffs": [],
+    "debuffs": ["Shock"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Suriel",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 6184,
+    "atk": 1266,
+    "def": 588,
+    "spd": 120,
+    "crit": 24,
+    "cdmg": 150,
+    "acc": 12,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Reap",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 106% damage to a single enemy target, and has a 35% chance of causing Burn for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Burn chance increased by 5%",
+        "DMG is increased by 10%",
+        "Burn chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Sweep Up",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 76.3% damage to all enemy targets, causing 4 Burns, which are randomly allocated among enemy targets for 2 rounds. Every time you successfully add a Burn, advance your action bar by 25%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Grim Reaper",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Inflicts 152.6% damage on a single enemy target, and increases the damage by 15% for every Burn on the target. When an enemy is killed, restores 20% HP based off the attacked target's maximum health for all allies targets.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "selfImprint": "ACC",
+    "partyImprint": "CDMG",
+    "selfBuffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Burn"],
+    "specialEq": {
+      "mainStat": "",
+      "hp": 0,
+      "atk": 0,
+      "skillEffect": ""
+    }
+  },
+  {
+    "name": "Sylvia",
+    "element": "Molten",
+    "role": "Tank",
+    "rarity": 4,
+    "hp": 7429,
+    "atk": 995,
+    "def": 745,
+    "spd": 110,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 18,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Sparkling Spear",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Sylvia uses a spear to stab the enemy, causing damage equal to 50.4% attack power + 75.5% own defense to a single enemy target and has a 25% chance of causing Stun for 1 round.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Stun chance is increased by 10%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Perfect Pierce",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Sylvia charges the enemy, granting herself Defense Buff for 2 rounds, then causing damage equal to 76.3% attack power + 76.3% own defense to a single enemy target.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Noblewoman's Pride",
+      "cooldown": 6,
+      "passive": false,
+      "description": "Sylvia gathers energy in her spear and detonates. There is a 75% chance of causing Provoke to a single enemy target for 1 round, and a 50% chance of causing Attack Down to all enemy targets for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Provoke and Attack Down chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Provoke and Attack Down chance increased by 15%"
+      ]
+    },
+    "selfImprint": "DEF %",
+    "partyImprint": "DEF %  ",
+    "selfBuffs": ["Defense"],
+    "partyBuffs": [],
+    "debuffs": ["Provoke", "Attack", "Stun"],
+    "specialEq": {
+      "mainStat": "16% ACC",
+      "hp": 643,
+      "atk": 269,
+      "skillEffect": "Increase the Attack Down chance of Noblewoman's Pride by 25% and causes Provoke to the selected targeted enemy."
+    }
+  },
+  {
+    "name": "Timy",
+    "element": "Molten",
+    "role": "Tactics",
+    "rarity": 3,
+    "hp": 4931,
+    "atk": 1058,
+    "def": 570,
+    "spd": 119,
+    "crit": 24,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Cat's 'Whirlwind'",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 95.4% damage to a single enemy target, and increases the damage by 0.075% per 1 point of speed.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Cat's Sway",
+      "cooldown": 0,
+      "passive": true,
+      "description": "At the beginning of each battle, Evade the next attack you receive. After every 2 rounds, there is a 75% chance that the next attack you receive will be Evaded.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Evasion chance increased by 5%",
+        "Evasion chance increased by 5%",
+        "Evasion chance increased by 5%",
+        "Evasion chance increased by 5%",
+        "Evasion chance increased by 5%"
+      ]
+    },
+    "skill3": {
+      "name": "Cat's Assistance",
+      "cooldown": 4,
+      "passive": false,
+      "description": "Advance all allies action bar by 20%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Increase action bar boost by 2%",
+        "Increase action bar boost by 2%",
+        "Reduce cooldown by 1 turn",
+        "Increase action bar boost by 3%",
+        "Increase action bar boost by 3%"
+      ]
+    },
+    "selfImprint": "ATK",
+    "partyImprint": "ATK",
     "selfBuffs": [],
     "partyBuffs": [],
     "debuffs": [],
@@ -1274,51 +4456,69 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
+    "name": "Tony",
+    "element": "Thunder",
+    "role": "Tactics",
+    "rarity": 4,
+    "hp": 5444,
+    "atk": 1337,
+    "def": 722,
+    "spd": 102,
+    "crit": 24,
     "cdmg": 150,
-    "acc": 0,
+    "acc": 18,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Snow Bunny's Hammer",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Inflicts 111.3% damage to a single enemy target, and repels 10% of the target's action bar. If the target is Stunned, an additional 10% of the target's action bar will be repelled.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
     "skill2": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Carrot Impact",
+      "cooldown": 3,
       "passive": false,
-      "description": "",
+      "description": "Tony launches a carrot bomb at the enemy, causing 151.1% damage to a single enemy target, and 75% chance of causing Attack Down and Slow for 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Wake-Up Call",
+      "cooldown": 5,
       "passive": false,
-      "description": "",
+      "description": "Tony slams her shock hammer violently, causing 106% damage to all enemy targets, with a 50% chance of causing Stun to all enemies for 1 round. Grant self an Extra Turn when successfully causing Stun.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Stun chance is increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "Stun chance is increased by 15%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
+    "selfImprint": "DEF %",
+    "partyImprint": "HP %",
+    "selfBuffs": ["Extra Turn"],
     "partyBuffs": [],
-    "debuffs": [],
+    "debuffs": ["Attack", "Stun", "Slow"],
     "specialEq": {
       "mainStat": "",
       "hp": 0,
@@ -1327,51 +4527,69 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
+    "name": "Touka",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 7253,
+    "atk": 1300,
+    "def": 723,
+    "spd": 111,
     "crit": 12,
     "cdmg": 150,
     "acc": 0,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Fifth Method",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Inflicts damage equal to 106% of attack + 2.7% of own maximum health, to a single target and there is a 35% chance to cause Attack Down, lasts for 2 rounds. When Attack Down is successfully added, gain Attack Buff, lasts 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Attack Down chance increased by 10%",
+        "DMG is increased by 15%",
+        "Attack Down chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill2": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Eighth Form",
+      "cooldown": 3,
       "passive": false,
-      "description": "",
+      "description": "Inflicts damage equal to 85.9% of attack + 3.8% of own maximum health, to a single enemy target, and removes 1 buff from the target. Ignore targets Resistance and cause Critical Strike Down, lasts for 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Six Harmonies",
+      "cooldown": 5,
       "passive": false,
-      "description": "",
+      "description": "Inflicts damage equal to 159% attack + 12.7% of own maximum health, to a single enemy target. This attack is a guaranteed Critical Strike, and gain Critical Strike Resistance for 2 rounds",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 15%",
+        "DMG is increased by 15%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
+    "selfImprint": "ATK %",
+    "partyImprint": "HP %",
+    "selfBuffs": ["Attack", "Critical Resistance"],
     "partyBuffs": [],
-    "debuffs": [],
+    "debuffs": ["Attack", "Critical", "Dispel"],
     "specialEq": {
       "mainStat": "",
       "hp": 0,
@@ -1380,51 +4598,69 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
+    "name": "Valeria",
+    "element": "Crystal",
+    "role": "Tank",
+    "rarity": 4,
+    "hp": 7699,
+    "atk": 1036,
+    "def": 721,
+    "spd": 102,
     "crit": 12,
     "cdmg": 150,
     "acc": 0,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Frontline Marksman",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Valeria calmly attacks a single enemy target causing damage equal to 53% attack power + 4.2% of own maximum health + 50% of own defense, with a 35% chance of causing Defense Down. Lasts for 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Defense Down chance increased by 5%",
+        "DMG is increased by 5%",
+        "Defense Down chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
     "skill2": {
-      "name": "",
+      "name": "A Critical Juncture",
       "cooldown": 0,
-      "passive": false,
-      "description": "",
+      "passive": true,
+      "description": "Valeria keeps a high level of calmness. When being attacked, there is a 50% chance of gaining Defense Buff for 1 round; if the current health value is below 50% of the maximum health value, the chance of triggering is increased by 25%.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "Triggering chance increased by 5%",
+        "Triggering chance increased by 10%",
+        "Triggering chance increased by 10%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Final Shot",
+      "cooldown": 5,
       "passive": false,
-      "description": "",
+      "description": "Valeria fires a bullet to pierce all enemies, causing damage equal to 74.2% attack power + 6.6% own maximum health + 50% own defense; there is a 75% chance of causing Mark to targets for 2 rounds and granting self Heal-Over-Time for 2 rounds",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Mark chance increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "Mark chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
+    "selfImprint": "HP %",
+    "partyImprint": "ACC",
+    "selfBuffs": ["Heal Over Time", "Defense"],
     "partyBuffs": [],
-    "debuffs": [],
+    "debuffs": ["Defense", "Mark"],
     "specialEq": {
       "mainStat": "",
       "hp": 0,
@@ -1433,51 +4669,69 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
+    "name": "Verbana",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 4,
+    "hp": 5998,
+    "atk": 1462,
+    "def": 644,
+    "spd": 103,
+    "crit": 20,
     "cdmg": 150,
     "acc": 0,
     "res": 0,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Battleaxe Strike",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Gain 1 point of energy. Deal 106% damage to a single enemy target, and has a 35% chance of causing Defense Down, lasting 2 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Defense Down chance increased by 5%",
+        "DMG is increased by 10%",
+        "Defense Down chance increased by 5%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill2": {
-      "name": "",
+      "name": "Victorious Strike",
       "cooldown": 0,
-      "passive": false,
-      "description": "",
+      "passive": true,
+      "description": "Verbana increases her energy by 3 when she defeats an enemy with [Battleaxe Strike] and [Violent Whirlwind]. If your energy value reaches 5, at the beginning of your turn, you will consume all your energy and put yourself into a [Power State] for 3 rounds. Power State: After attacking, additionally use [Triumphent Strike (similar to Violent Whirlwind)] causing 74.2% damage to all enemy targets.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "Skill DMG is increased by 5%",
+        "Skill DMG is increased by 5%",
+        "Skill DMG is increased by 5%",
+        "Skill DMG is increased by 10%",
+        "Skill DMG is increased by 10%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Violent Whirlwind",
+      "cooldown": 4,
       "passive": false,
-      "description": "",
+      "description": "Gain 2 points of energy. Verbana violently swings her battleaxe, causing 84.8% damage to all enemy targets, and a 50% chance of causing Defense Down, lasting for 2 rounds. If you are in [Power State], the damage is increased by 15% and cause an additional Defense Down.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
-    "selfImprint": "",
-    "partyImprint": "",
+    "selfImprint": "ASS",
+    "partyImprint": "ATK %",
     "selfBuffs": [],
     "partyBuffs": [],
-    "debuffs": [],
+    "debuffs": ["Defense"],
     "specialEq": {
       "mainStat": "",
       "hp": 0,
@@ -1486,2488 +4740,65 @@
     }
   },
   {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
+    "name": "Winnie",
+    "element": "Crystal",
+    "role": "Tank",
+    "rarity": 3,
+    "hp": 6372,
+    "atk": 1000,
+    "def": 709,
+    "spd": 90,
+    "crit": 24,
     "cdmg": 150,
     "acc": 0,
-    "res": 0,
+    "res": 12,
     "ass": 3,
     "skill1": {
-      "name": "",
+      "name": "Burst Fire",
       "cooldown": 0,
       "passive": false,
-      "description": "",
+      "description": "Winnie makes precise shots while maneuvering at high speed, causing damage equal to 66.8% attack power + 6.7% of own maximum health to a single enemy target; there is an 80% chance that the ally with the lowest health percentage will be given Defense Buff. Lasts 1 round.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Defense Buff chance increased by 10%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%",
+        "Defense Buff chance increased by 10%",
+        "DMG is increased by 15%"
+      ]
     },
     "skill2": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Guided Missile",
+      "cooldown": 4,
       "passive": false,
-      "description": "",
+      "description": "Winnie launches missiles, causing damage equal to 84.8% attack power + 12.7% of own maximum health to a single enemy target; gains a Barrier equal to 25% of her maximum health for 3 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Shield increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Shield increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
     },
     "skill3": {
-      "name": "",
-      "cooldown": 0,
+      "name": "Cat Returns the Favor",
+      "cooldown": 6,
       "passive": false,
-      "description": "",
+      "description": "Winnie opens the capacitor to release energy particles, granting all allies Immunity for 3 rounds.",
       "cost": 0,
       "gain": 0,
-      "upgrades": []
+      "upgrades": ["Reduce cooldown by 1 turn", "Reduce cooldown by 1 turn"]
     },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
-    "debuffs": [],
-    "specialEq": {
-      "mainStat": "",
-      "hp": 0,
-      "atk": 0,
-      "skillEffect": ""
-    }
-  },
-  {
-    "name": "",
-    "element": "",
-    "role": "",
-    "rarity": 0,
-    "hp": 0,
-    "atk": 0,
-    "def": 0,
-    "spd": 0,
-    "crit": 12,
-    "cdmg": 150,
-    "acc": 0,
-    "res": 0,
-    "ass": 3,
-    "skill1": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill2": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "skill3": {
-      "name": "",
-      "cooldown": 0,
-      "passive": false,
-      "description": "",
-      "cost": 0,
-      "gain": 0,
-      "upgrades": []
-    },
-    "selfImprint": "",
-    "partyImprint": "",
-    "selfBuffs": [],
-    "partyBuffs": [],
+    "selfImprint": "RES",
+    "partyImprint": "HP",
+    "selfBuffs": ["Immunity", "Barrier", "Defense"],
+    "partyBuffs": ["Immunity", "Defense"],
     "debuffs": [],
     "specialEq": {
       "mainStat": "",

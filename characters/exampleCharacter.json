@@ -45,7 +45,6 @@
   "partyBuffs": [],
   "debuffs": [],
   "specialEq": {
-    "name": "",
     "mainStat": "",
     "hp": 0,
     "atk": 0,
