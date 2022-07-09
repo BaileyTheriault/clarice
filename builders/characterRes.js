@@ -3,6 +3,7 @@ const {
   MessageActionRow,
   MessageButton,
   MessageAttachment,
+  MessageSelectMenu,
 } = require('discord.js');
 const { findCharacter } = require('../mongo/characterMethods');
 const { elements } = require('../utils/data');
@@ -16,12 +17,13 @@ const characterResponse = async (
   partyImprint,
   visibility,
 ) => {
-  console.log(visibility);
   const embed = new MessageEmbed();
+  const buttonRow = new MessageActionRow();
   const response = {
     embeds: [embed],
     ephemeral: !visibility,
     files: [],
+    components: [],
   };
 
   if (!name && !debuff && !buff && !partyBuff && !imprint && !partyImprint) {
@@ -93,27 +95,108 @@ const characterResponse = async (
     } = characterData[0];
 
     const pfpImg = new MessageAttachment(`./assets/avatars/${name}.png`);
-    response.files.push(pfpImg);
+    const rarityImg = new MessageAttachment(`./assets/icons/${rarity}.png`);
+    const roleImg = new MessageAttachment(
+      `./assets/icons/${element}_${role}.png`,
+    );
+    response.files.push(pfpImg, rarityImg, roleImg);
 
     embed
       .setTitle(name)
       .setColor(elements[element.toUpperCase()])
-      .setThumbnail(`attachment://${name}.png`);
+      .setAuthor({
+        iconURL: `attachment://${element}_${role}.png`,
+        name: 'Stats & Skills',
+      })
+      .setThumbnail(`attachment://${name}.png`)
+      .setImage(`attachment://${rarity}.png`)
+      .addFields(
+        { name: '__HP__', value: `${hp}`, inline: true },
+        { name: '__ATK__', value: `${atk}`, inline: true },
+        { name: '__DEF__', value: `${def}`, inline: true },
+        { name: '__SPD__', value: `${spd}`, inline: true },
+        { name: '__CRIT__', value: `${crit}%`, inline: true },
+        { name: '__CDMG__', value: `${cdmg}%`, inline: true },
+        { name: '__ACC__', value: `${acc}%`, inline: true },
+        { name: '__RES__', value: `${res}%`, inline: true },
+        {
+          name: '__Imprint__',
+          value: `${imprint} & ${partyImprint}`,
+          inline: true,
+        },
+        { name: `__${skill1.name}__`, value: skill1.description },
+        { name: `__${skill2.name}__`, value: skill2.description },
+        { name: `__${skill3.name}__`, value: skill3.description },
+      );
+
+    const upgradesButton = new MessageButton()
+      .setCustomId('milvus-upgrades')
+      .setLabel('Skill Upgrades')
+      .setStyle('SECONDARY');
+
+    buttonRow.addComponents(upgradesButton);
+
+    if (specialEq.mainStat) {
+      const specialEqButton = new MessageButton()
+        .setCustomId('milvus-eq')
+        .setLabel('Special Equipment')
+        .setStyle('SECONDARY');
+
+      buttonRow.addComponents(specialEqButton);
+    }
+
+    response.components.push(buttonRow);
   }
 
   if (characterData.length > 1) {
-  }
+    let desStr = '';
+    let crystalStr = '';
+    let moltenStr = '';
+    let thunderStr = '';
+    const selectOptions = [];
 
-  const buttons = new MessageActionRow().addComponents(
-    new MessageButton()
-      .setCustomId('prev')
-      .setLabel('Prev')
-      .setStyle('SECONDARY'),
-    new MessageButton()
-      .setCustomId('next')
-      .setLabel('Next')
-      .setStyle('PRIMARY'),
-  );
+    options.forEach((option, i) => {
+      if (option) desStr += `**${optionsOrder[i]}** \`${option}\` `;
+    });
+
+    characterData.forEach((chara) => {
+      switch (chara.element) {
+        case 'Crystal':
+          crystalStr += `\`${chara.name}\` `;
+          break;
+        case 'Molten':
+          moltenStr += `\`${chara.name}\` `;
+          break;
+        case 'Thunder':
+          thunderStr += `\`${chara.name}\` `;
+          break;
+      }
+      selectOptions.push({
+        label: `${chara.name}`,
+        value: `${chara.name}`,
+      });
+    });
+
+    embed
+      .setTitle(`${characterData.length} Characters Found`)
+      .setColor('GREEN');
+
+    moltenStr ? embed.addField('__Molten Characters__', moltenStr) : null;
+    thunderStr ? embed.addField('__Thunder Characters__', thunderStr) : null;
+    crystalStr ? embed.addField('__Crystal Characters__', crystalStr) : null;
+
+    embed.addField('Options', desStr);
+
+    if (characterData.length <= 25) {
+      const selectMenu = new MessageSelectMenu()
+        .setCustomId('chara-finder')
+        .setPlaceholder('Select a character to view their information')
+        .addOptions(selectOptions);
+
+      buttonRow.addComponents(selectMenu);
+      response.components.push(buttonRow);
+    }
+  }
 
   return response;
 };
