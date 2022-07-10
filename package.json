@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "seed": "npm run characterData",
-    "characterData": "mongo clarice --eval 'db.characters.drop()' && mongoimport --db clarice --collection characters --file ./characters/characterData.json --jsonArray"
+    "characterData": "mongo clarice --eval 'db.characters.drop()' && mongoimport --db clarice --collection characters --file ./assets/characterData.json --jsonArray"
   },
   "author": "",
   "license": "ISC",

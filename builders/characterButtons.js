@@ -4,10 +4,10 @@ const {
   MessageActionRow,
 } = require('discord.js');
 
-const oneCharButtons = (mainStat) => {
+const oneCharButtons = (charaName, mainStat) => {
   const buttonRow = new MessageActionRow();
   const upgradesButton = new MessageButton()
-    .setCustomId('milvus-upgrades')
+    .setCustomId(`${charaName}-skills`)
     .setLabel('Skill Upgrades')
     .setStyle('SECONDARY');
 
@@ -15,7 +15,7 @@ const oneCharButtons = (mainStat) => {
 
   if (mainStat) {
     const specialEqButton = new MessageButton()
-      .setCustomId('special-eq')
+      .setCustomId(`${charaName}-eq`)
       .setLabel('Special Equipment')
       .setStyle('SECONDARY');
 
@@ -43,4 +43,25 @@ const multipleCharsButtons = (characterData) => {
   return buttonRow;
 };
 
-module.exports = { oneCharButtons, multipleCharsButtons };
+const skillsButtons = (charaName, mainStat) => {
+  const buttonRow = new MessageActionRow();
+  const mainInfoButton = new MessageButton()
+    .setCustomId(`${charaName}-home`)
+    .setLabel(`${charaName}`)
+    .setStyle('PRIMARY');
+
+  buttonRow.addComponents(mainInfoButton);
+
+  if (mainStat) {
+    const specialEqButton = new MessageButton()
+      .setCustomId(`${charaName}-eq`)
+      .setLabel('Special Equipment')
+      .setStyle('SECONDARY');
+
+    buttonRow.addComponents(specialEqButton);
+  }
+
+  return buttonRow;
+};
+
+module.exports = { oneCharButtons, multipleCharsButtons, skillsButtons };

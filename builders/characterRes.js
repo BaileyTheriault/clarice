@@ -61,7 +61,7 @@ const characterResponse = async (
     } = char;
 
     embed = oneCharEmbed(char, response);
-    buttonRow = oneCharButtons(mainStat);
+    buttonRow = oneCharButtons(char.name, mainStat);
 
     response.components = [buttonRow];
     response.embeds = [embed];

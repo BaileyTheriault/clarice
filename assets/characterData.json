@@ -4003,7 +4003,7 @@
     },
     "skill3": {
       "name": "The Cycle of Life and Death",
-      "cooldown": 0,
+      "cooldown": 6,
       "passive": false,
       "description": "Cleanse self of debuffs and enter Shura Mode. Inflict damage equal to 143.1% attack + 28.6% of own maximum health to a single enemy target, and cause Attack Down for 2 rounds. Your own skills gain energy points, and when you are attacked, it consumes 20 energy points. Shura Mode: Enter Shura Mode and skill effects will be improved. At the end of own turn, consumes 15 energy points; at the end of any character's turn, if own energy value is 0, Shura Mode ends.",
       "cost": 0,

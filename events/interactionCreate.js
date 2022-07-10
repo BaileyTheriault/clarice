@@ -1,11 +1,18 @@
+const { characterButtonsRes } = require('../builders/characterButtonRes');
+
 module.exports = {
   name: 'interactionCreate',
   async execute(client, interaction) {
-    if (interaction.isModalSubmit()) {
-      console.log(interaction.values);
-      return await interaction.reply({
-        content: 'Your submission was recieved successfully!',
-      });
+    if (interaction.isButton()) {
+      try {
+        return await characterButtonsRes(interaction);
+      } catch (error) {
+        console.error(error);
+        await interaction.reply({
+          content: 'There was an error while executing this command!',
+          ephemeral: true,
+        });
+      }
     }
     if (!interaction.isCommand()) return;
 
