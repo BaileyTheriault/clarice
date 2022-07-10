@@ -10,7 +10,6 @@ const { skillsEmbed, oneCharEmbed, speqEmbed } = require('./characterEmbeds');
 
 const characterButtonsRes = async (interaction) => {
   await interaction.deferUpdate();
-  await wait(1500);
 
   const [name, param] = stringIdentifier(interaction.customId);
   const response = { files: [], components: [] };
