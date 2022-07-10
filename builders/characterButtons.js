@@ -64,4 +64,25 @@ const skillsButtons = (charaName, mainStat) => {
   return buttonRow;
 };
 
-module.exports = { oneCharButtons, multipleCharsButtons, skillsButtons };
+const speqButtons = (charaName) => {
+  const buttonRow = new MessageActionRow();
+  const mainInfoButton = new MessageButton()
+    .setCustomId(`${charaName}-home`)
+    .setLabel(`${charaName}`)
+    .setStyle('PRIMARY');
+  const upgradesButton = new MessageButton()
+    .setCustomId(`${charaName}-skills`)
+    .setLabel('Skill Upgrades')
+    .setStyle('SECONDARY');
+
+  buttonRow.addComponents(mainInfoButton, upgradesButton);
+
+  return buttonRow;
+};
+
+module.exports = {
+  oneCharButtons,
+  multipleCharsButtons,
+  skillsButtons,
+  speqButtons,
+};

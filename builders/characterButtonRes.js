@@ -1,8 +1,12 @@
 const wait = require('node:timers/promises').setTimeout;
 const { findCharacter } = require('../mongo/characterMethods');
 const { stringIdentifier } = require('../utils/utils');
-const { skillsButtons, oneCharButtons } = require('./characterButtons');
-const { skillsEmbed, oneCharEmbed } = require('./characterEmbeds');
+const {
+  skillsButtons,
+  oneCharButtons,
+  speqButtons,
+} = require('./characterButtons');
+const { skillsEmbed, oneCharEmbed, speqEmbed } = require('./characterEmbeds');
 
 const characterButtonsRes = async (interaction) => {
   await interaction.deferUpdate();
@@ -38,6 +42,13 @@ const characterButtonsRes = async (interaction) => {
   }
 
   if (param === 'eq') {
+    embed = speqEmbed(charaData, response);
+    buttonRow = speqButtons(name);
+
+    response.embeds = [embed];
+    response.components = [buttonRow];
+
+    return await interaction.editReply(response);
   }
 };
 

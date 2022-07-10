@@ -163,7 +163,38 @@ const multipleCharsEmbed = (options, characterData) => {
   return embed;
 };
 
-const uniqueEqEmbed = () => {};
+const speqEmbed = (
+  {
+    name,
+    element,
+    role,
+    rarity,
+    specialEq: { mainStat, atk, hp, skillEffect },
+  },
+  response,
+) => {
+  const embed = new MessageEmbed();
+  const pfpImg = new MessageAttachment(`./assets/avatars/${name}.png`);
+  const rarityImg = new MessageAttachment(`./assets/icons/${rarity}.png`);
+  const roleImg = new MessageAttachment(
+    `./assets/icons/${element}_${role}.png`,
+  );
+  response.files.push(pfpImg, rarityImg, roleImg);
+
+  embed
+    .setTitle(`${name} SPEQ`)
+    .setAuthor({
+      iconURL: `attachment://${element}_${role}.png`,
+      name: 'Stats & Skills at Lv. 30',
+    })
+    .setThumbnail(`attachment://${name}.png`)
+    .setImage(`attachment://${rarity}.png`)
+    .setColor(elements[element.toUpperCase()])
+    .setDescription(`\`${mainStat}\`\n\`${atk} ATK\`\n\`${hp} HP\``)
+    .addField('__Skill Effect__', skillEffect);
+
+  return embed;
+};
 
 const skillsEmbed = (
   {
@@ -237,6 +268,6 @@ module.exports = {
   noCharEmbed,
   oneCharEmbed,
   multipleCharsEmbed,
-  uniqueEqEmbed,
+  speqEmbed,
   skillsEmbed,
 };
