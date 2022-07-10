@@ -24,6 +24,7 @@ const characterResponse = async (
   partyImprint,
   visibility,
   interaction,
+  help = false,
 ) => {
   let embed;
   let buttonRow;
@@ -33,7 +34,10 @@ const characterResponse = async (
     components: [],
   };
 
-  if (!name && !debuff && !buff && !partyBuff && !imprint && !partyImprint) {
+  if (
+    (!name && !debuff && !buff && !partyBuff && !imprint && !partyImprint) ||
+    help
+  ) {
     embed = charHelpEmbed();
     response.embeds = [embed];
 

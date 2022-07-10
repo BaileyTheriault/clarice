@@ -155,9 +155,9 @@ const multipleCharsEmbed = (options, characterData) => {
 
   embed.setTitle(`${characterData.length} Characters Found`).setColor('GREEN');
 
-  moltenStr ? embed.addField('__Molten Characters__', moltenStr) : null;
-  thunderStr ? embed.addField('__Thunder Characters__', thunderStr) : null;
-  crystalStr ? embed.addField('__Crystal Characters__', crystalStr) : null;
+  moltenStr ? embed.addField('__Molten__', moltenStr) : null;
+  thunderStr ? embed.addField('__Thunder__', thunderStr) : null;
+  crystalStr ? embed.addField('__Crystal__', crystalStr) : null;
   embed.addField('Options', desStr);
 
   return embed;

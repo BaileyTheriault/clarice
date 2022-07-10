@@ -17,56 +17,70 @@ buffs.forEach((buff) => buffOptions.push({ name: buff, value: buff }));
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('character')
-    .setDescription(
-      'Returns character information! Press enter without any options for help.',
-    )
-    .addStringOption((option) =>
-      option
-        .setName('name')
+    .setDescription('Returns character information!')
+    .addSubcommand((subcommand) =>
+      subcommand
+        .setName('search')
         .setDescription(
-          'Enter a character name to see their stats, skills, imprint, rarity, and unique equipment',
+          'Searches for a character matching the user provided options.',
+        )
+        .addStringOption((option) =>
+          option
+            .setName('name')
+            .setDescription(
+              'Enter a character name to see their stats, skills, imprint, rarity, and unique equipment',
+            ),
+        )
+        .addStringOption((option) =>
+          option
+            .setName('debuff')
+            .setDescription(
+              'Select a debuff to see what characters can apply it',
+            )
+            .setChoices(...debuffOptions),
+        )
+        .addStringOption((option) =>
+          option
+            .setName('buff')
+            .setDescription('Select a buff to see what characters can apply it')
+            .setChoices(...buffOptions),
+        )
+        .addStringOption((option) =>
+          option
+            .setName('party-buff')
+            .setDescription(
+              'Select a buff to see what characters can apply it to party members',
+            )
+            .setChoices(...buffOptions),
+        )
+        .addStringOption((option) =>
+          option
+            .setName('imprint')
+            .setDescription(
+              'Select an attribute to see what characters have it',
+            )
+            .setChoices(...attributeOptions),
+        )
+        .addStringOption((option) =>
+          option
+            .setName('party-imprint')
+            .setDescription(
+              'Select an attribute to see what characters have it as a party imprint',
+            )
+            .addChoices(...attributeOptions),
+        )
+        .addBooleanOption((option) =>
+          option
+            .setName('visibility')
+            .setDescription(
+              'Display the result message privately (false) or publically (true)',
+            ),
         ),
     )
-    .addStringOption((option) =>
-      option
-        .setName('debuff')
-        .setDescription('Select a debuff to see what characters can apply it')
-        .setChoices(...debuffOptions),
-    )
-    .addStringOption((option) =>
-      option
-        .setName('buff')
-        .setDescription('Select a buff to see what characters can apply it')
-        .setChoices(...buffOptions),
-    )
-    .addStringOption((option) =>
-      option
-        .setName('party-buff')
-        .setDescription(
-          'Select a buff to see what characters can apply it to party members',
-        )
-        .setChoices(...buffOptions),
-    )
-    .addStringOption((option) =>
-      option
-        .setName('imprint')
-        .setDescription('Select an attribute to see what characters have it')
-        .setChoices(...attributeOptions),
-    )
-    .addStringOption((option) =>
-      option
-        .setName('party-imprint')
-        .setDescription(
-          'Select an attribute to see what characters have it as a party imprint',
-        )
-        .addChoices(...attributeOptions),
-    )
-    .addBooleanOption((option) =>
-      option
-        .setName('visibility')
-        .setDescription(
-          'Display the result message privately (false) or publically (true)',
-        ),
+    .addSubcommand((subcommand) =>
+      subcommand
+        .setName('help')
+        .setDescription('Exactly what you think it does.'),
     ),
   async execute(interaction) {
     const name = interaction.options.getString('name');
@@ -76,6 +90,7 @@ module.exports = {
     const imprint = interaction.options.getString('imprint');
     const partyImprint = interaction.options.getString('party-imprint');
     const visibility = interaction.options.getBoolean('visibility');
+    const help = interaction.options.getSubcommand() === 'help';
 
     await characterResponse(
       name,
@@ -86,6 +101,7 @@ module.exports = {
       partyImprint,
       visibility,
       interaction,
+      help,
     );
   },
 };
