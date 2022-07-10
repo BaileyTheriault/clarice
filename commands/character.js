@@ -77,7 +77,7 @@ module.exports = {
     const partyImprint = interaction.options.getString('party-imprint');
     const visibility = interaction.options.getBoolean('visibility');
 
-    const res = await characterResponse(
+    await characterResponse(
       name,
       debuff,
       buff,
@@ -85,7 +85,7 @@ module.exports = {
       imprint,
       partyImprint,
       visibility,
+      interaction,
     );
-    await interaction.reply(res);
   },
 };

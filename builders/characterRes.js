@@ -23,6 +23,7 @@ const characterResponse = async (
   imprint,
   partyImprint,
   visibility,
+  interaction,
 ) => {
   let embed;
   let buttonRow;
@@ -36,7 +37,7 @@ const characterResponse = async (
     embed = charHelpEmbed();
     response.embeds = [embed];
 
-    return response;
+    return interaction.reply(response);
   }
 
   const characterData = await findCharacter(name, [
@@ -51,7 +52,7 @@ const characterResponse = async (
     embed = noCharEmbed(name, debuff, buff, partyBuff, imprint, partyImprint);
     response.embeds = [embed];
 
-    return response;
+    return interaction.reply(response);
   }
 
   if (characterData.length === 1) {
@@ -66,7 +67,7 @@ const characterResponse = async (
     response.components = [buttonRow];
     response.embeds = [embed];
 
-    return response;
+    return interaction.reply(response);
   }
 
   if (characterData.length > 1) {
@@ -81,7 +82,7 @@ const characterResponse = async (
       response.components = [buttonRow];
     }
 
-    return response;
+    return interaction.reply(response);
   }
 };
 
