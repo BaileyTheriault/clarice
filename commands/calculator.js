@@ -43,18 +43,26 @@ module.exports = {
       .setTitle('Gear Calculator')
       .addComponents(
         new SelectMenuComponent()
-          .setCustomId('subs')
-          .setPlaceholder('Substats')
-          .setMinValues(1)
-          .setMaxValues(4)
+          .setCustomId('subs-1')
+          .setPlaceholder('First Substat')
+          .addOptions(options),
+        new SelectMenuComponent()
+          .setCustomId('subs-2')
+          .setPlaceholder('Second Substat')
+          .addOptions(options),
+        new SelectMenuComponent()
+          .setCustomId('subs-3')
+          .setPlaceholder('Third Substat')
+          .addOptions(options),
+        new SelectMenuComponent()
+          .setCustomId('subs-4')
+          .setPlaceholder('Fourth Substat')
           .addOptions(options),
         new TextInputComponent()
           .setCustomId('vals')
           .setLabel('Substat Values')
           .setStyle('SHORT')
-          .setPlaceholder(
-            'Input your substats in the order they appear on the menu',
-          )
+          .setPlaceholder('Input your substats in order separated by spaces')
           .setRequired(true),
       );
 

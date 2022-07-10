@@ -6,7 +6,12 @@ module.exports = {
   async execute(client, modal) {
     if (modal.customId === 'gs-calc') {
       const vals = modal.getTextInputValue('vals').split(' ');
-      const subs = modal.getSelectMenuValues('subs').sort();
+      const sub1 = modal.getSelectMenuValues('subs-1');
+      const sub2 = modal.getSelectMenuValues('subs-2');
+      const sub3 = modal.getSelectMenuValues('subs-3');
+      const sub4 = modal.getSelectMenuValues('subs-4');
+
+      const subs = [sub1[0], sub2[0], sub3[0], sub4[0]];
 
       //25% less atk on average
       const atkPer = 0.43;
@@ -39,6 +44,7 @@ module.exports = {
             gs.push(defMax * defPerOfMax);
             break;
           case 'HP':
+            console.log('here in hp');
             let hpPerOfMax = (num * hpPer) / 100;
             gs.push(hpMax * hpPerOfMax);
             break;
