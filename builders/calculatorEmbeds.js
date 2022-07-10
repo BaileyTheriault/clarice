@@ -42,7 +42,6 @@ const gearScoreHelpEmbed = () => {
     .setDescription(
       'This command does not work for mobile users as Discord has not added official support for select menus in modals, *yet.* For non-mobile users the command works by selecting **ALL** substats for your equipment piece and then inputting the values in the order they appear __**separated by spaces.**__ The below screenshot showcases the order for an example.',
     )
-    .setFooter({ text: '19 speed does not exist' })
     .setImage('https://i.imgur.com/6N9qUNS.png');
 
   return embed;
