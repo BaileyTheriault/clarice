@@ -1,9 +1,11 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Intents, Collection } = require('discord.js');
+const discordModals = require('discord-modals');
 const { token } = require('./config.js');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+discordModals(client);
 
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');

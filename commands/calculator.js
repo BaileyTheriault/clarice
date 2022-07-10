@@ -1,43 +1,46 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const {
   Modal,
-  MessageActionRow,
   TextInputComponent,
-  MessageSelectMenu,
-} = require('discord.js');
+  SelectMenuComponent,
+  showModal,
+} = require('discord-modals');
 const { attributes } = require('../utils/data');
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('calculator')
     .setDescription('Return the gearscore of a given equipment piece.'),
-  async execute(interaction) {
-    const modal = new Modal().setCustomId('gsCalc').setTitle('Gear Calculator');
-
+  async execute(interaction, client) {
     let options = [];
-    attributes.forEach((atr) => options.push({ label: atr, value: atr }));
+    attributes.sort();
+    attributes.forEach((atr) =>
+      atr !== 'ASS' ? options.push({ label: atr, value: atr }) : null,
+    );
 
-    const subOneSelect = new MessageSelectMenu()
-      .setCustomId('subOneSelect')
-      .setPlaceholder('Substat')
-      .setMinValues(1)
-      .setMaxValues(4)
-      .addOptions(options);
+    const modal = new Modal()
+      .setCustomId('gs-calc')
+      .setTitle('Gear Calculator')
+      .addComponents(
+        new SelectMenuComponent()
+          .setCustomId('subs')
+          .setPlaceholder('Substats')
+          .setMinValues(1)
+          .setMaxValues(4)
+          .addOptions(options),
+        new TextInputComponent()
+          .setCustomId('vals')
+          .setLabel('Substat Values')
+          .setStyle('SHORT')
+          .setPlaceholder(
+            'Input your substats in the order they appear on the menu',
+          )
+          .setRequired(true),
+      );
 
-    const subOneInput = new TextInputComponent()
-      .setCustomId('subOneInput')
-      .setLabel('Value')
-      .setStyle('SHORT');
-
-    // const subTwoInput = new TextInputComponent()
-    //   .setCustomId('subTwoInput')
-    //   .setLabel('Value')
-    //   .setStyle('SHORT');
-
-    const firstActionRow = new MessageActionRow().addComponents(subOneSelect);
-    const secondActionRow = new MessageActionRow().addComponents(subOneInput);
-
-    modal.addComponents(firstActionRow, secondActionRow);
-    await interaction.showModal(modal);
+    await showModal(modal, {
+      client: client,
+      interaction: interaction,
+    });
   },
 };
