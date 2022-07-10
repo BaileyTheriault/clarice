@@ -44,7 +44,6 @@ module.exports = {
             gs.push(defMax * defPerOfMax);
             break;
           case 'HP':
-            console.log('here in hp');
             let hpPerOfMax = (num * hpPer) / 100;
             gs.push(hpMax * hpPerOfMax);
             break;
