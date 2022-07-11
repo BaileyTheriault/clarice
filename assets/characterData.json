@@ -4806,5 +4806,218 @@
       "atk": 0,
       "skillEffect": ""
     }
+  },
+  {
+    "name": "Ryza",
+    "element": "Molten",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 6089,
+    "atk": 1380,
+    "def": 657,
+    "spd": 114,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Star Calling",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 106% damage on a single enemy target, with a 50% chance to cause Mark for 2 rounds. Ignores Hit status.",
+      "cost": 0,
+      "gain": 20,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Mark chance increased by 10%",
+        "DMG is increased by 10%",
+        "Mark chance increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Alchemist's Full Power",
+      "cooldown": 0,
+      "passive": true,
+      "description": "Makes the ally in Position 1 share 30% of damage taken towards Ryza. When Ryza or an ally is attacked, gain 20 energy. If energy reaches 100 [Max: 150], immediately use [Alchemist's Full Power]. Alchemist's Full Power: Consumes all energy to deal 79.5% damage to all enemies, with a 50% chance to cause Defense Down for 2 rounds. If it's a Critical Strike, increases Critical Strike Damage by 20%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Mechanical Quasar",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 116.6% damage to all enemy targets and causes Buff Block and Anti-Heal to all enemy targets for 2 rounds. If it's a Critical Strike, increases Critical Strike Damage by 20%.",
+      "cost": 0,
+      "gain": 60,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "imprint": "HP %",
+    "partyImprint": "CRIT",
+    "buffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Anti-Heal", "Buff Block", "Defense", "Mark"],
+    "specialEq": {
+      "mainStat": "16% ACC",
+      "hp": 807,
+      "atk": 224,
+      "skillEffect": "Every enemy killed by [Mechanical Quasar] has a 100% chance to gain 30 energy. [Mechanical Quasar] deals 42.4% bonus damage which penetrates 70% of their Defense."
+    }
+  },
+  {
+    "name": "Klaudia",
+    "element": "Crystal",
+    "role": "Tactics",
+    "rarity": 5,
+    "hp": 5287,
+    "atk": 1404,
+    "def": 795,
+    "spd": 106,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Overture Eulogy",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 106% damage to a single enemy target. Repel the target's action bar by 5% and advance your own action bar by 5%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Action Bar repel and advance increased by 2%",
+        "DMG is increased by 10%",
+        "Action Bar repel and advance increased by 3%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill2": {
+      "name": "Frozen Dance",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Inflicts 74.2% damage to all enemy targets. There is a 75% chance to dispel 1 buff off the targets and 2 times to have a 75% to repel 15% of the targets action bar.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 5%",
+        "DMG is increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Grand Finale",
+      "cooldown": 3,
+      "passive": false,
+      "description": "Inflicts 84.8% damage to all enemy targets. For every buff on the target, damage is increased by 10%; for every target that has a buff, inflict Defense Down. Reduces all targets' buffs by two turns and advance own action bar by 50%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "DMG is increased by 10%",
+        "Reduce cooldown by 1 turn",
+        "DMG is increased by 10%",
+        "DMG is increased by 20%"
+      ]
+    },
+    "imprint": "RES",
+    "partyImprint": "ACC",
+    "buffs": [],
+    "partyBuffs": [],
+    "debuffs": ["Defense", "Dispel"],
+    "specialEq": {
+      "mainStat": "16% ACC",
+      "hp": 807,
+      "atk": 224,
+      "skillEffect": "Dispel chance of [Frozen Dance] increases to 100%. Increase the number of times to repel target's action bar from 2 to 3."
+    }
+  },
+  {
+    "name": "Lila",
+    "element": "Thunder",
+    "role": "Assault",
+    "rarity": 5,
+    "hp": 5260,
+    "atk": 1390,
+    "def": 782,
+    "spd": 106,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Burning Concentration",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflicts 100.7% damage to a single enemy target, consuming all energy. For every point of energy consumed, the damage is increased by 4%. When a critical strike is triggered, the critical strike damage of this attack is increased by 20%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Per point of energy damage is increased by 1%",
+        "DMG is increased by 10%",
+        "Per point of energy damage is increased by 1%",
+        "DMG is increased by 20%"
+      ]
+    },
+    "skill2": {
+      "name": "Warrior's Symbol",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Give entire team Crit Up that lasts for 3 rounds and advance the action bar of all other allies by 1% per 5.4% of own critical strike chance; grant self an Extra Turn. Whenever an ally triggers a critical strike, advance your own action bar by 10% and gain 1 energy. [Max Energy is 100]",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Action bar advance increased by 1% and Crit Chance scaling increased by 0.3%",
+        "Action bar advance increased by 1% and Crit Chance scaling increased by 0.3%",
+        "Action bar advance increased by 1% and Crit Chance scaling increased by 0.4%",
+        "Action bar advance increased by 1% and Crit Chance scaling increased by 0.4%",
+        "Action bar advance increased by 1% and Crit Chance scaling increased by 0.4%"
+      ]
+    },
+    "skill3": {
+      "name": "Einzelkampf",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Inflicts 169.6% damage to a single enemy target, consuming all energy. For each point of energy consumed, the damage is increased by 7%. When a critical strike is triggered, the critical strike damage of this attack is increased by 50%.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 10%",
+        "Per point of energy consumed damage is increased by 1.5%",
+        "DMG is increased by 10%",
+        "Per point of energy consumed damage is increased by 2%",
+        "DMG is increased by 20%"
+      ]
+    },
+    "imprint": "CRIT",
+    "partyImprint": "HP %",
+    "buffs": ["Critical", "Extra Turn"],
+    "partyBuffs": ["Critical"],
+    "debuffs": [],
+    "specialEq": {
+      "mainStat": "16% ATK",
+      "hp": 643,
+      "atk": 269,
+      "skillEffect": "Gain 2 energy for every other ally buffed by [Warrior's Symbol]. Also, whenever an attack from Lila reduces an enemy's hp to 0, gain 5 energy."
+    }
   }
 ]
