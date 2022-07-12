@@ -1,4 +1,7 @@
 const { MessageEmbed } = require('discord.js');
+const {
+  pity: { summonCost, collabPity, normalPity },
+} = require('../utils/data');
 
 const gearScoreEmbed = (subs, vals, gs) => {
   let color;
@@ -47,4 +50,41 @@ const gearScoreHelpEmbed = () => {
   return embed;
 };
 
-module.exports = { gearScoreEmbed, gearScoreHelpEmbed };
+const pityEmbed = (crystals, tickets) => {
+  tickets ? (crystals += tickets * summonCost) : null;
+  const regPityCount = ((100 / normalPity) * crystals) / 100;
+  const collabPityCount = ((100 / collabPity) * crystals) / 100;
+  const regPityStr =
+    crystals >= 0 && tickets >= 0
+      ? `Currently you have \`${regPityCount.toFixed(2)}\` pities. You need \`${
+          Math.ceil(regPityCount) * normalPity - crystals
+        }\` more crystals for your next pity.`
+      : 'You are in debt.';
+  const collabPityStr =
+    tickets >= 0 && crystals >= 0
+      ? `Currently you have \`${collabPityCount.toFixed(
+          2,
+        )}\` pities. You need \`${
+          Math.ceil(collabPityCount) * collabPity - crystals
+        }\` more crystals for your next pity.`
+      : 'You are in debt.';
+  const embed = new MessageEmbed()
+    .setTitle('Pity Calculator')
+    .setColor('LUMINOUS_VIVID_PINK')
+    .addFields([
+      {
+        name: '__Standard__',
+        value: regPityStr,
+        inline: true,
+      },
+      {
+        name: '__Collab__',
+        value: collabPityStr,
+        inline: true,
+      },
+    ]);
+
+  return embed;
+};
+
+module.exports = { gearScoreEmbed, gearScoreHelpEmbed, pityEmbed };

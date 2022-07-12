@@ -64,4 +64,9 @@ module.exports = {
     CRYSTAL: 'GREEN',
     THUNDER: 'BLUE',
   },
+  pity: {
+    summonCost: 180,
+    collabPity: 16200,
+    normalPity: 36000,
+  },
 };

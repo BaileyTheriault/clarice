@@ -5,7 +5,10 @@ const {
   SelectMenuComponent,
   showModal,
 } = require('discord-modals');
-const { gearScoreHelpEmbed } = require('../builders/calculatorEmbeds');
+const {
+  gearScoreHelpEmbed,
+  pityEmbed,
+} = require('../builders/calculatorEmbeds');
 const { attributes } = require('../utils/data');
 
 module.exports = {
@@ -16,17 +19,46 @@ module.exports = {
     )
     .addSubcommand((subcommand) =>
       subcommand
-        .setName('gs-calc')
+        .setName('gear-score')
         .setDescription("Calculates a given equipment's gearscore."),
     )
     .addSubcommand((subcommand) =>
       subcommand
-        .setName('gs-help')
+        .setName('pity')
+        .setDescription(
+          'Calculates how far off you are from reaching pity for a banner.',
+        )
+        .addIntegerOption((option) =>
+          option
+            .setName('crystals')
+            .setDescription('Your current number of crystals.')
+            .setRequired(true),
+        )
+        .addIntegerOption((option) =>
+          option
+            .setName('tickets')
+            .setDescription('Your current number of summon tickets.')
+            .setRequired(true),
+        ),
+    )
+    .addSubcommand((subcommand) =>
+      subcommand
+        .setName('help')
         .setDescription('Exactly what you think it does.'),
     ),
   async execute(interaction, client) {
-    if (interaction.options.getSubcommand() === 'gs-help') {
+    const cmd = interaction.options.getSubcommand();
+    if (cmd === 'help') {
       const embed = gearScoreHelpEmbed();
+      const response = { ephemeral: true, embeds: [embed] };
+
+      return await interaction.reply(response);
+    }
+
+    if (cmd === 'pity') {
+      const crystals = interaction.options.getInteger('crystals');
+      const tickets = interaction.options.getInteger('tickets');
+      const embed = pityEmbed(crystals, tickets);
       const response = { ephemeral: true, embeds: [embed] };
 
       return await interaction.reply(response);
