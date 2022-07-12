@@ -56,17 +56,19 @@ const pityEmbed = (crystals, tickets) => {
   const collabPityCount = ((100 / collabPity) * crystals) / 100;
   const regPityStr =
     crystals >= 0 && tickets >= 0
-      ? `Currently you have \`${regPityCount.toFixed(2)}\` pities. You need \`${
-          Math.ceil(regPityCount) * normalPity - crystals
-        }\` more crystals for your next pity.`
+      ? `Currently you have \`${regPityCount.toFixed(
+          2,
+        )}\` pities. You need \`${Math.ceil(
+          Math.ceil(regPityCount) * normalPity - crystals,
+        )}\` more crystals for your next pity.`
       : 'You are in debt.';
   const collabPityStr =
     tickets >= 0 && crystals >= 0
       ? `Currently you have \`${collabPityCount.toFixed(
           2,
-        )}\` pities. You need \`${
-          Math.ceil(collabPityCount) * collabPity - crystals
-        }\` more crystals for your next pity.`
+        )}\` pities. You need \`${Math.ceil(
+          Math.ceil(collabPityCount) * collabPity - crystals,
+        )}\` more crystals for your next pity.`
       : 'You are in debt.';
   const embed = new MessageEmbed()
     .setTitle('Pity Calculator')
