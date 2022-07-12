@@ -40,20 +40,9 @@ module.exports = {
             .setDescription('Your current number of summon tickets.')
             .setRequired(true),
         ),
-    )
-    .addSubcommand((subcommand) =>
-      subcommand
-        .setName('help')
-        .setDescription('Exactly what you think it does.'),
     ),
   async execute(interaction, client) {
     const cmd = interaction.options.getSubcommand();
-    if (cmd === 'help') {
-      const embed = gearScoreHelpEmbed();
-      const response = { ephemeral: true, embeds: [embed] };
-
-      return await interaction.reply(response);
-    }
 
     if (cmd === 'pity') {
       const crystals = interaction.options.getInteger('crystals');

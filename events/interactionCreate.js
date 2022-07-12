@@ -1,5 +1,7 @@
 const { characterButtonsRes } = require('../builders/characterButtonRes');
-const characterResponse = require('../builders/characterRes');
+const { oneCharButtons } = require('../builders/characterButtons');
+const { oneCharEmbed } = require('../builders/characterEmbeds');
+const { findCharacter } = require('../mongo/characterMethods');
 
 module.exports = {
   name: 'interactionCreate',
@@ -18,18 +20,26 @@ module.exports = {
 
     if (interaction.isSelectMenu()) {
       try {
-        const { ephemeral, values } = interaction;
+        const { values } = interaction;
+        const response = {
+          ephemeral: true,
+          files: [],
+          components: [],
+        };
         const [charName] = values;
-        return await characterResponse(
-          charName,
-          null,
-          null,
-          null,
-          null,
-          null,
-          ephemeral,
-          interaction,
-        );
+        const characterData = await findCharacter(charName);
+        const [char] = characterData;
+        const {
+          specialEq: { mainStat },
+        } = char;
+
+        embed = oneCharEmbed(char, response);
+        buttonRow = oneCharButtons(char.name, mainStat);
+
+        response.components = [buttonRow];
+        response.embeds = [embed];
+
+        return interaction.reply(response);
       } catch (error) {
         console.error(error);
         await interaction.reply({

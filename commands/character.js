@@ -1,6 +1,23 @@
+const {
+  MessageEmbed,
+  MessageActionRow,
+  MessageButton,
+  MessageAttachment,
+  MessageSelectMenu,
+} = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const characterResponse = require('../builders/characterRes');
-const { attributes, debuffs, buffs } = require('../utils/data');
+const { findCharacter } = require('../mongo/characterMethods');
+const { attributes, debuffs, buffs, elements } = require('../utils/data');
+const {
+  oneCharButtons,
+  multipleCharsButtons,
+} = require('../builders/characterButtons');
+const {
+  charHelpEmbed,
+  noCharEmbed,
+  oneCharEmbed,
+  multipleCharsEmbed,
+} = require('../builders/characterEmbeds');
 
 const attributeOptions = [];
 const debuffOptions = [];
@@ -76,11 +93,6 @@ module.exports = {
               'Display the result message privately (false) or publically (true)',
             ),
         ),
-    )
-    .addSubcommand((subcommand) =>
-      subcommand
-        .setName('help')
-        .setDescription('Exactly what you think it does.'),
     ),
   async execute(interaction) {
     const name = interaction.options.getString('name');
@@ -90,18 +102,65 @@ module.exports = {
     const imprint = interaction.options.getString('imprint');
     const partyImprint = interaction.options.getString('party-imprint');
     const visibility = interaction.options.getBoolean('visibility');
-    const help = interaction.options.getSubcommand() === 'help';
 
-    await characterResponse(
-      name,
+    let embed;
+    let buttonRow;
+    const response = {
+      ephemeral: !visibility,
+      files: [],
+      components: [],
+    };
+
+    if (!name && !debuff && !buff && !partyBuff && !imprint && !partyImprint) {
+      embed = charHelpEmbed();
+      response.embeds = [embed];
+
+      return interaction.reply(response);
+    }
+
+    const characterData = await findCharacter(name, [
       debuff,
       buff,
       partyBuff,
       imprint,
       partyImprint,
-      visibility,
-      interaction,
-      help,
-    );
+    ]);
+
+    if (characterData.length === 0) {
+      embed = noCharEmbed(name, debuff, buff, partyBuff, imprint, partyImprint);
+      response.embeds = [embed];
+
+      return interaction.reply(response);
+    }
+
+    if (characterData.length === 1) {
+      const [char] = characterData;
+      const {
+        specialEq: { mainStat },
+      } = char;
+
+      embed = oneCharEmbed(char, response);
+      buttonRow = oneCharButtons(char.name, mainStat);
+
+      response.components = [buttonRow];
+      response.embeds = [embed];
+
+      return interaction.reply(response);
+    }
+
+    if (characterData.length > 1) {
+      embed = multipleCharsEmbed(
+        [name, debuff, buff, partyBuff, imprint, partyImprint],
+        characterData,
+      );
+      response.embeds = [embed];
+
+      if (characterData.length <= 25) {
+        buttonRow = multipleCharsButtons(characterData, response);
+        response.components = [buttonRow];
+      }
+
+      return interaction.reply(response);
+    }
   },
 };
