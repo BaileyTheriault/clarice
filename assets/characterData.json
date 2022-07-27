@@ -991,6 +991,77 @@
     }
   },
   {
+    "name": "Cream",
+    "element": "Thunder",
+    "role": "Healer",
+    "rarity": 5,
+    "hp": 6784,
+    "atk": 710,
+    "def": 894,
+    "spd": 91,
+    "crit": 12,
+    "cdmg": 150,
+    "acc": 0,
+    "res": 0,
+    "ass": 3,
+    "skill1": {
+      "name": "Cream Bubble",
+      "cooldown": 0,
+      "passive": false,
+      "description": "Inflict 106% damage to a single enemy target, with a 25% chance of causing Attack Down for 2 rounds.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "DMG is increased by 5%",
+        "Attack Down chance increased by 10%",
+        "DMG is increased by 10%",
+        "Attack Down chance increased by 15%",
+        "DMG is increased by 15%"
+      ]
+    },
+    "skill2": {
+      "name": "Cream Healing",
+      "cooldown": 2,
+      "passive": false,
+      "description": "Restores health equal to 18% of Cream's max health to a single ally. When the ally's health is lower than 50%, the recovery increases by 20%. When the ally's health is higher than 50%, restores health equal to 8% of Cream's max health to all allies.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Heal increased by 10%",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
+    },
+    "skill3": {
+      "name": "Cream Overflow",
+      "cooldown": 5,
+      "passive": false,
+      "description": "Restores health equal to 15% of Cream's max health for all allies, and generating a Barrier equal to 20% of Cream's max health, lasts for 3 rounds. Grants all allies Immunity for 2 rounds. Give the ally with the least damage taken a Dmg Reduction once.",
+      "cost": 0,
+      "gain": 0,
+      "upgrades": [
+        "Heal increased by 5%",
+        "Heal increased by 5%",
+        "Reduce cooldown by 1 turn",
+        "Heal increased by 10%",
+        "Heal increased by 10%"
+      ]
+    },
+    "imprint": "HP %",
+    "partyImprint": "RES",
+    "buffs": ["Barrier", "Immunity", "DMG Reduction"],
+    "partyBuffs": ["Barrier", "Immunity", "DMG Reduction"],
+    "debuffs": ["Attack"],
+    "specialEq": {
+      "mainStat": "10% DMG Reduction From Crystal Units",
+      "hp": 807,
+      "atk": 224,
+      "skillEffect": "Cream Overflow Cleanses all allies right before healing them."
+    }
+  },
+  {
     "name": "Dean",
     "element": "Crystal",
     "role": "Tank",

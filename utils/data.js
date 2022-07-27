@@ -23,6 +23,7 @@ module.exports = {
     'Critical Damage',
     'Critical Resistance',
     'Defense',
+    'DMG Reduction',
     'Dodge',
     'Emergency Device',
     'Extra Turn',
